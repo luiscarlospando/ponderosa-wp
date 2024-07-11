@@ -1,0 +1,225 @@
+// No media query necessary for xs breakpoint as it's effectively `@media (min-width: 0) { ... }`
+
+// Small devices (landscape phones, 576px and up)
+@include media-breakpoint-up(sm) {
+    .curved-div::before {
+        height: 80px;
+        top: -40px;
+        border-bottom-left-radius: 100% 40px;
+        border-bottom-right-radius: 100% 40px;
+    }
+
+    .curved-div::after {
+        height: 80px;
+        bottom: -40px;
+        border-top-left-radius: 100% 40px;
+        border-top-right-radius: 100% 40px;
+    }
+
+    .recetas-generico,
+    #recetario,
+    #producto,
+    #recetas-de-temporada {
+        .card {
+            flex-direction: row;
+            padding: 10px 20px;
+
+            img {
+                align-self: center;
+                max-width: 50%;
+            }
+        }
+    }
+
+    #before-recetario,
+    .before-consejos {
+        margin-top: -66px;
+    }
+
+    #producto {
+        height: 144vh;
+    }
+}
+
+// Medium devices (tablets, 768px and up)
+@include media-breakpoint-up(md) {
+    .curved-div::before {
+        height: 70px;
+        top: -35px;
+        border-bottom-left-radius: 100% 35px;
+        border-bottom-right-radius: 100% 35px;
+    }
+
+    .curved-div::after {
+        height: 70px;
+        bottom: -35px;
+        border-top-left-radius: 100% 35px;
+        border-top-right-radius: 100% 35px;
+    }
+
+    #before-recetario,
+    #after-recetario,
+    .before-consejos,
+    .after-consejos {
+        height: 118px;
+    }
+
+    #before-recetario,
+    .before-consejos {
+        margin-top: -78px;
+    }
+
+    #nuestra-historia {
+        margin-top: -80px;
+    }
+
+    #producto {
+        height: 138h;
+    }
+}
+
+// Large devices (desktops, 992px and up)
+@include media-breakpoint-up(lg) {
+    .border-lg-end {
+        border-right: 1px solid #dee2e6;
+    }
+
+    .swiper-productos {
+        .swiper-slide {
+            opacity: 0.5;
+            -webkit-transform: scale(0.8) !important; /* Safari, Chrome */
+            -moz-transform: scale(0.8) !important; /* Firefox */
+            -ms-transform: scale(0.8) !important; /* Internet Explorer */
+            -o-transform: scale(0.8) !important; /* Opera */
+            transform: scale(0.8) !important; /* Standard */
+        }
+
+        .swiper-slide-next {
+            opacity: 1;
+            -webkit-transform: scale(1) !important; /* Safari, Chrome */
+            -moz-transform: scale(1) !important; /* Firefox */
+            -ms-transform: scale(1) !important; /* Internet Explorer */
+            -o-transform: scale(1) !important; /* Opera */
+            transform: scale(1) !important; /* Standard */
+        }
+    }
+
+    .curved-div::before {
+        height: 60px;
+        top: -30px;
+        border-bottom-left-radius: 100% 30px;
+        border-bottom-right-radius: 100% 30px;
+    }
+
+    .curved-div::after {
+        height: 60px;
+        bottom: -30px;
+        border-top-left-radius: 100% 30px;
+        border-top-right-radius: 100% 30px;
+    }
+
+    #before-recetario,
+    #after-recetario,
+    .before-consejos,
+    .after-consejos {
+        height: 154px;
+    }
+
+    #before-recetario,
+    .before-consejos {
+        margin-top: -102px;
+    }
+
+    #nuestra-historia {
+        margin-top: -106px;
+        padding: 140px 0;
+    }
+
+    #consejos {
+        .card {
+            img {
+                border-radius: 1rem;
+            }
+        }
+    }
+
+    #producto {
+        height: 134vh;
+    }
+}
+
+// X-Large devices (large desktops, 1200px and up)
+@include media-breakpoint-up(xl) {
+    .curved-div::before {
+        height: 50px;
+        top: -25px;
+        border-bottom-left-radius: 100% 25px;
+        border-bottom-right-radius: 100% 25px;
+    }
+
+    .curved-div::after {
+        height: 50px;
+        bottom: -25px;
+        border-top-left-radius: 100% 25px;
+        border-top-right-radius: 100% 25px;
+    }
+
+    #before-recetario,
+    #after-recetario,
+    .before-consejos,
+    .after-consejos {
+        height: 184px;
+    }
+
+    #before-recetario,
+    .before-consejos {
+        margin-top: -122px;
+    }
+
+    #nuestra-historia {
+        margin-top: -124px;
+        padding: 180px 0;
+    }
+
+    #producto {
+        height: 64vh;
+    }
+}
+
+// XX-Large devices (larger desktops, 1400px and up)
+@include media-breakpoint-up(xxl) {
+    .curved-div::before {
+        height: 40px;
+        top: -20px;
+        border-bottom-left-radius: 100% 20px;
+        border-bottom-right-radius: 100% 20px;
+    }
+
+    .curved-div::after {
+        height: 40px;
+        bottom: -20px;
+        border-top-left-radius: 100% 20px;
+        border-top-right-radius: 100% 20px;
+    }
+
+    #before-recetario,
+    #after-recetario,
+    .before-consejos,
+    .after-consejos {
+        height: 210px;
+    }
+
+    #before-recetario,
+    .after-consejos {
+        margin-top: -140px;
+    }
+
+    #nuestra-historia {
+        margin-top: -140px;
+        padding: 190px 0;
+    }
+
+    #producto {
+        height: 60vh;
+    }
+}

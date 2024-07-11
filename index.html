@@ -1,0 +1,1364 @@
+<!doctype html>
+<html lang="es-MX">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Ponderosa</title>
+
+        <link rel="apple-touch-icon" sizes="180x180" href="./apple-touch-icon.png">
+        <link rel="icon" type="image/png" sizes="32x32" href="./favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="./favicon-16x16.png">
+        <link rel="manifest" href="./site.webmanifest">
+        <link rel="mask-icon" href="./safari-pinned-tab.svg" color="#5bbad5">
+        <meta name="msapplication-TileColor" content="#e41a2f">
+        <meta name="theme-color" content="#e41a2f">
+
+        <link rel="stylesheet" href="./assets/css/styles.css" />
+    </head>
+    <body class="reddit-sans-regular">
+        <div id="backdrop"></div>
+        <div class="menu">
+            <a id="cerrar-menu" href="javascript:void(0)">
+                <i class="fas fa-times"></i>
+            </a>
+            <div class="menu-contenido">
+                <a class="anchor" id="btn-logo" href="#">
+                    <img
+                        class="logo img-fluid"
+                        src="./assets/images/logo-rojo@2x.png"
+                        alt=""
+                    />
+                </a>
+                <nav>
+                    <ul id="navmenu" class="list-unstyled">
+                        <li>
+                            <a class="anchor" id="btn-nav-1" href="#"
+                                >Productos</a
+                            >
+                        </li>
+                        <li>
+                            <a class="anchor" id="btn-nav-2" href="#"
+                                >Nuestra Historia</a
+                            >
+                        </li>
+                        <li>
+                            <a class="anchor" id="btn-nav-3" href="#"
+                                >Recetas</a
+                            >
+                        </li>
+                        <li>
+                            <a class="anchor" id="btn-nav-4" href="#"
+                                >Consejos Prácticos</a
+                            >
+                        </li>
+                    </ul>
+                </nav>
+                <a href="#" class="anchor btn btn-primary" id="btn-contacto"
+                    >Contáctanos</a
+                >
+                <div id="social">
+                    <ul class="list-inline">
+                        <li class="list-inline-item">
+                            <a href="https://" target="_blank">
+                                <i class="fab fa-instagram"></i>
+                            </a>
+                        </li>
+                        <li class="list-inline-item">
+                            <a href="https://" target="_blank">
+                                <i class="fab fa-facebook"></i>
+                            </a>
+                        </li>
+                        <li class="list-inline-item">
+                            <a href="https://" target="_blank">
+                                <i class="fab fa-tiktok"></i>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <!-- div id="contacto-menu">
+                    <ul class="list-unstyled">
+                        <li>
+                            <i class="far fa-envelope"></i>
+                            <a href="mailto:cmail@domain.com"
+                                >mail@domain.com</a
+                            >
+                        </li>
+                        <li>
+                            <i class="fas fa-phone"></i>
+                            <a href="tel:+526141234567">(614) 123 4567</a>
+                        </li>
+                    </ul>
+                </div -->
+            </div>
+        </div>
+
+        <header id="navbar">
+            <div class="container">
+                <div class="row">
+                    <div class="d-none d-lg-block col-lg-5 my-auto text-center">
+                        <nav>
+                            <ul class="list-inline">
+                                <li class="list-inline-item">
+                                    <a href="">Productos</a>
+                                </li>
+                                <li class="list-inline-item">
+                                    <a href="">Nuestra Historia</a>
+                                </li>
+                                <li class="list-inline-item">
+                                    <a href="">Recetas</a>
+                                </li>
+                            </ul>
+                        </nav>
+                    </div>
+                    <div class="col-6 col-lg-2 text-lg-center">
+                        <a href="/">
+                            <img
+                                src="./assets/images/logo@2x.png"
+                                alt=""
+                                class="logo img-fluid"
+                                id="logo-navbar"
+                            />
+                        </a>
+                    </div>
+                    <div class="col-lg-5 d-none d-lg-block my-auto text-center">
+                        <nav>
+                            <ul class="list-inline">
+                                <li class="list-inline-item">
+                                    <a href="">Consejos Prácticos</a>
+                                </li>
+                                <li class="list-inline-item">
+                                    <a href="">Contacto</a>
+                                </li>
+                                <li class="list-inline-item">
+                                    <ul class="list-inline">
+                                        <li class="list-inline-item">
+                                            Síguenos
+                                        </li>
+                                        <li class="list-inline-item">
+                                            <ul class="list-inline list-inline-nested">
+                                                <li class="list-inline-item">
+                                                    <a
+                                                        href="https://"
+                                                        alt="Instagram"
+                                                        target="_blank"
+                                                    >
+                                                        <i
+                                                            class="fa-brands fa-instagram"
+                                                        ></i>
+                                                    </a>
+                                                </li>
+                                                <li class="list-inline-item">
+                                                    <a
+                                                        href="https://"
+                                                        alt="Facebook"
+                                                        target="_blank"
+                                                    >
+                                                        <i class="fa-brands fa-facebook"></i>
+                                                    </a>
+                                                </li>
+                                                <li class="list-inline-item">
+                                                    <a
+                                                        href="https://"
+                                                        alt="TikTok"
+                                                        target="_blank"
+                                                    >
+                                                        <i
+                                                            class="fa-brands fa-tiktok"
+                                                        ></i>
+                                                    </a>
+                                                </li>
+                                            </ul>
+                                        </li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </nav>
+                    </div>
+                    <div class="col-6 d-lg-none my-auto text-end">
+                        <a
+                            id="mburger"
+                            class="d-lg-none"
+                            href="javascript:void(0)"
+                        >
+                            <i class="fas fa-bars"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <section id="jumbotron">
+            <div class="swiper swiper-jumbotron">
+                <div class="swiper-pagination"></div>
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide bg-jumbotron-1">
+                        <div class="overlay"></div>
+                        <div class="container">
+                            <div class="row">
+                                <div class="col">
+                                    <h1>
+                                        <strong>Creadores</strong><br>
+                                        de la <strong>salchicha</strong><br>
+                                        para <strong>asar</strong>
+                                    </h1>
+                                    <a href="#" class="btn btn-primary">Conoce más</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide bg-jumbotron-2">
+                        <div class="overlay"></div>
+                        <div class="container">
+                            <div class="row">
+                                <div class="col">
+                                    <h1>
+                                        <strong>Ponderosa:</strong><br>
+                                        Creando <strong>amistades</strong><br>
+                                        que duran <strong>siempre</strong>
+                                    </h1>
+                                    <a href="#" class="btn btn-primary">Conoce más</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide bg-jumbotron-3">
+                        <div class="overlay"></div>
+                        <div class="container">
+                            <div class="row">
+                                <div class="col">
+                                    <h1>
+                                        <strong>Ponderosa:</strong><br>
+                                        Creando <strong>productos</strong><br>
+                                        para la <strong>familia</strong>
+                                    </h1>
+                                    <a href="#" class="btn btn-primary">Conoce más</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide bg-jumbotron-4">
+                        <div class="overlay"></div>
+                        <div class="container">
+                            <div class="row">
+                                <div class="col">
+                                    <h1>
+                                        <strong>Ponderosa:</strong><br>
+                                        Creando <strong>recetas</strong><br>
+                                        para la <strong>familia</strong>
+                                    </h1>
+                                    <a href="#" class="btn btn-primary">Conoce más</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
+            </div>
+        </section>
+
+        <section id="historia" class="section-bg-salchichas py-60">
+            <div class="overlay"></div>
+            <div class="container-fluid">
+                <div class="row mb-5 text-center">
+                    <div class="col">
+                        <h1>Nuestra historia</h1>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col">
+                        <!-- Swiper Años -->
+                        <div class="swiper swiper-anos">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide">Inicio</div>
+                                <div class="swiper-slide">1998</div>
+                                <div class="swiper-slide">2004</div>
+                                <div class="swiper-slide">2012</div>
+                                <div class="swiper-slide">2024</div>
+                                <div class="swiper-slide">La historia continúa</div>
+                            </div>
+                        </div>
+
+                        <!-- Swiper Historia -->
+                        <div class="swiper swiper-historia">
+                            <div class="swiper-wrapper timeline">
+                                <div class="swiper-slide swiper-start">
+                                    <div class="status">
+                                        <div class="icn-start"></div>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide" data-year="1998">
+                                    <div class="timestamp">
+                                        <span class="date">1998<span>
+                                    </div>
+                                    <div class="timeline_icn"></div>
+                                    <div class="status">
+                                        <div class="card">
+                                            <img src="./assets/images/thumb-vertical.png" class="card-img-top img-fluid" alt="">
+                                            <div class="card-body">
+                                                <h1 class="card-title">Título</h1 >
+                                                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Recusandae error ratione ipsum. Optio, minus! Minus illum iste voluptatibus veritatis, excepturi exercitationem optio sint repellendus provident soluta, rem vel impedit sequi.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide" data-year="2004">
+                                    <div class="timestamp">
+                                        <span class="date">2004<span>
+                                    </div>
+                                    <div class="timeline_icn"></div>
+                                    <div class="status">
+                                        <div class="card">
+                                            <img src="./assets/images/thumb-vertical.png" class="card-img-top img-fluid" alt="">
+                                            <div class="card-body">
+                                                <h1 class="card-title">Título</h1 >
+                                                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Recusandae error ratione ipsum. Optio, minus! Minus illum iste voluptatibus veritatis, excepturi exercitationem optio sint repellendus provident soluta, rem vel impedit sequi.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide" data-year="2012">
+                                    <div class="timestamp">
+                                        <span class="date">2012<span>
+                                    </div>
+                                    <div class="timeline_icn"></div>
+                                    <div class="status">
+                                        <div class="card">
+                                            <img src="./assets/images/thumb-vertical.png" class="card-img-top img-fluid" alt="">
+                                            <div class="card-body">
+                                                <h1 class="card-title">Título</h1 >
+                                                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Recusandae error ratione ipsum. Optio, minus! Minus illum iste voluptatibus veritatis, excepturi exercitationem optio sint repellendus provident soluta, rem vel impedit sequi.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide" data-year="2024">
+                                    <div class="timestamp">
+                                        <span class="date">2024<span>
+                                    </div>
+                                    <div class="timeline_icn"></div>
+                                    <div class="status">
+                                        <div class="card">
+                                            <img src="./assets/images/thumb-vertical.png" class="card-img-top img-fluid" alt="">
+                                            <div class="card-body">
+                                                <h1 class="card-title">Título</h1 >
+                                                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Recusandae error ratione ipsum. Optio, minus! Minus illum iste voluptatibus veritatis, excepturi exercitationem optio sint repellendus provident soluta, rem vel impedit sequi.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="swiper-slide swiper-end">
+                                    <div class="status">
+                                        <div class="icn-end"></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-button-next"></div>
+                            <div class="swiper-button-prev"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="producto" class="section-white">
+            <!-- Swiper -->
+            <div class="swiper swiper-producto">
+                <div class="swiper-pagination"></div>
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-xl-4 my-auto">
+                                    <figure>
+                                        <img src="./assets/images/thumb-producto.png" alt="" class="img-fluid">
+                                    </figure>
+                                </div>
+                                <div class="col-xl-8 my-auto">
+                                    <div class="row">
+                                        <div class="col-xl-8 mb-4 mb-xl-0">
+                                            <h1>Salchicha Viena</h1>
+                                            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Culpa velit consequatur, explicabo sit quasi, ullam atque corrupti iure id ut eos quis inventore adipisci hic ducimus, nobis maxime debitis aut.</p>
+                                            <h2>Presentación</h2>
+                                            <ul class="list-inline">
+                                                <li class="list-inline-item">- 8 pz</li>
+                                                <li class="list-inline-item">- 12 px</li>
+                                            </ul>
+                                            <h2>Receta popular</h2>
+                                            <div class="card">
+                                                <img src="./assets/images/thumb-receta.png" class="card-img-left img-fluid" alt="">
+                                                <div class="card-body">
+                                                    <h1 class="card-title">Lorem ipsum dolor sit amet consectetur adipisicing elit</h1>
+                                                    <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi ut magnam perferendis mollitia dolores odit distinctio ea a corporis? Fuga accusantium eius ad? Ipsa non doloremque quas provident, eum error!</p>
+                                                    <a href="#" class="btn btn-primary">Ver receta <i class="fa-solid fa-arrow-right"></i></a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-xl-4">
+                                            <ul class="list-unstyled especificaciones">
+                                                <li>
+                                                    <div class="especificacion">
+                                                        <div>420 g</div>
+                                                        <div>Porción</div>
+                                                    </div>
+                                                </li>
+                                                <li>
+                                                    <div class="especificacion">
+                                                        <div>144.5</div>
+                                                        <div>Contenido energético /kcal</div>
+                                                    </div>
+                                                </li>
+                                                <li>
+                                                    <div class="especificacion">
+                                                        <div>7.5 g</div>
+                                                        <div>Proteínas</div>
+                                                    </div>
+                                                </li>
+                                                <li>
+                                                    <div class="especificacion">
+                                                        <div>7.5 g</div>
+                                                        <div>Grasas (lípidos)</div>
+                                                    </div>
+                                                </li>
+                                                <li>
+                                                    <div class="especificacion">
+                                                        <div>4.94 g</div>
+                                                        <div>Grasa saturada</div>
+                                                    </div>
+                                                </li>
+                                                <li>
+                                                    <div class="especificacion">
+                                                        <div>12.00 g</div>
+                                                        <div>Carbohidratos</div>
+                                                    </div>
+                                                </li>
+                                                <li>
+                                                    <div class="especificacion">
+                                                        <div>12.00 g</div>
+                                                        <div>Azúcares</div>
+                                                    </div>
+                                                </li>
+                                                <li>
+                                                    <div class="especificacion">
+                                                        <div>125 mg</div>
+                                                        <div>Sodio</div>
+                                                    </div>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="swiper-slide">
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-xl-4 my-auto">
+                                    <figure>
+                                        <img src="./assets/images/thumb-producto.png" alt="" class="img-fluid">
+                                    </figure>
+                                </div>
+                                <div class="col-xl-8 my-auto">
+                                    <div class="row">
+                                        <div class="col-xl-8 mb-4 mb-xl-0">
+                                            <h1>Salchicha Viena</h1>
+                                            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Culpa velit consequatur, explicabo sit quasi, ullam atque corrupti iure id ut eos quis inventore adipisci hic ducimus, nobis maxime debitis aut.</p>
+                                            <h2>Presentación</h2>
+                                            <ul class="list-inline">
+                                                <li class="list-inline-item">- 8 pz</li>
+                                                <li class="list-inline-item">- 12 px</li>
+                                            </ul>
+                                            <h2>Receta popular</h2>
+                                            <div class="card">
+                                                <img src="./assets/images/thumb-receta.png" class="card-img-left img-fluid" alt="">
+                                                <div class="card-body">
+                                                    <h1 class="card-title">Lorem ipsum dolor sit amet consectetur adipisicing elit</h1>
+                                                    <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi ut magnam perferendis mollitia dolores odit distinctio ea a corporis? Fuga accusantium eius ad? Ipsa non doloremque quas provident, eum error!</p>
+                                                    <a href="#" class="btn btn-primary">Ver receta <i class="fa-solid fa-arrow-right"></i></a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-xl-4">
+                                            <ul class="list-unstyled especificaciones">
+                                                <li>
+                                                    <div class="especificacion">
+                                                        <div>420 g</div>
+                                                        <div>Porción</div>
+                                                    </div>
+                                                </li>
+                                                <li>
+                                                    <div class="especificacion">
+                                                        <div>144.5</div>
+                                                        <div>Contenido energético /kcal</div>
+                                                    </div>
+                                                </li>
+                                                <li>
+                                                    <div class="especificacion">
+                                                        <div>7.5 g</div>
+                                                        <div>Proteínas</div>
+                                                    </div>
+                                                </li>
+                                                <li>
+                                                    <div class="especificacion">
+                                                        <div>7.5 g</div>
+                                                        <div>Grasas (lípidos)</div>
+                                                    </div>
+                                                </li>
+                                                <li>
+                                                    <div class="especificacion">
+                                                        <div>4.94 g</div>
+                                                        <div>Grasa saturada</div>
+                                                    </div>
+                                                </li>
+                                                <li>
+                                                    <div class="especificacion">
+                                                        <div>12.00 g</div>
+                                                        <div>Carbohidratos</div>
+                                                    </div>
+                                                </li>
+                                                <li>
+                                                    <div class="especificacion">
+                                                        <div>12.00 g</div>
+                                                        <div>Azúcares</div>
+                                                    </div>
+                                                </li>
+                                                <li>
+                                                    <div class="especificacion">
+                                                        <div>125 mg</div>
+                                                        <div>Sodio</div>
+                                                    </div>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-navigation-container">
+                    <div class="swiper-button-next"></div>
+                    <div class="swiper-button-prev"></div>
+                </div>
+            </div>
+        </section>
+
+        <section id="recetas-de-temporada" class="section-bg-salchichas py-60">
+            <div class="overlay"></div>
+            <div class="container-fluid">
+                <div class="row mb-5">
+                    <div class="col-lg-10 offset-lg-1 text-center">
+                        <h1>Recetas de temporada</h1>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-lg-4 mb-4">
+                        <div class="card">
+                            <img src="./assets/images/thumb-receta.png" class="card-img-left img-fluid" alt="">
+                            <div class="card-body">
+                                <h1 class="card-title">Quesadillas con queso y chorizo Ponderosa</h1>
+                                <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi ut magnam perferendis mollitia dolores odit distinctio ea a corporis?</p>
+                                <a href="#" class="btn btn-primary">Ver receta <i class="fa-solid fa-arrow-right"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 mb-4">
+                        <div class="card">
+                            <img src="./assets/images/thumb-receta.png" class="card-img-left img-fluid" alt="">
+                            <div class="card-body">
+                                <h1 class="card-title">Quesadillas con queso y chorizo Ponderosa</h1>
+                                <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi ut magnam perferendis mollitia dolores odit distinctio ea a corporis?</p>
+                                <a href="#" class="btn btn-primary">Ver receta <i class="fa-solid fa-arrow-right"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 mb-4">
+                        <div class="card">
+                            <img src="./assets/images/thumb-receta.png" class="card-img-left img-fluid" alt="">
+                            <div class="card-body">
+                                <h1 class="card-title">Quesadillas con queso y chorizo Ponderosa</h1>
+                                <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi ut magnam perferendis mollitia dolores odit distinctio ea a corporis?</p>
+                                <a href="#" class="btn btn-primary">Ver receta <i class="fa-solid fa-arrow-right"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 mb-4">
+                        <div class="card">
+                            <img src="./assets/images/thumb-receta.png" class="card-img-left img-fluid" alt="">
+                            <div class="card-body">
+                                <h1 class="card-title">Quesadillas con queso y chorizo Ponderosa</h1>
+                                <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi ut magnam perferendis mollitia dolores odit distinctio ea a corporis?</p>
+                                <a href="#" class="btn btn-primary">Ver receta <i class="fa-solid fa-arrow-right"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 mb-4">
+                        <div class="card">
+                            <img src="./assets/images/thumb-receta.png" class="card-img-left img-fluid" alt="">
+                            <div class="card-body">
+                                <h1 class="card-title">Quesadillas con queso y chorizo Ponderosa</h1>
+                                <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi ut magnam perferendis mollitia dolores odit distinctio ea a corporis?</p>
+                                <a href="#" class="btn btn-primary">Ver receta <i class="fa-solid fa-arrow-right"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 mb-4">
+                        <div class="card">
+                            <img src="./assets/images/thumb-receta.png" class="card-img-left img-fluid" alt="">
+                            <div class="card-body">
+                                <h1 class="card-title">Quesadillas con queso y chorizo Ponderosa</h1>
+                                <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi ut magnam perferendis mollitia dolores odit distinctio ea a corporis?</p>
+                                <a href="#" class="btn btn-primary">Ver receta <i class="fa-solid fa-arrow-right"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col text-center">
+                        <a href="#" class="btn btn-primary">Ver más <i class="fa-solid fa-arrow-right"></i></a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section  class="recetas-generico section-white py-60">
+            <div class="overlay"></div>
+            <div class="container-fluid">
+                <div class="row mb-5">
+                    <div class="col-lg-10 offset-lg-1 text-center">
+                        <h1>Recetas pa'la carnita asada</h1>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-lg-4 mb-4">
+                        <div class="card">
+                            <img src="./assets/images/thumb-receta.png" class="card-img-left img-fluid" alt="">
+                            <div class="card-body">
+                                <h1 class="card-title">Quesadillas con queso y chorizo Ponderosa</h1>
+                                <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi ut magnam perferendis mollitia dolores odit distinctio ea a corporis?</p>
+                                <a href="#" class="btn btn-primary">Ver receta <i class="fa-solid fa-arrow-right"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 mb-4">
+                        <div class="card">
+                            <img src="./assets/images/thumb-receta.png" class="card-img-left img-fluid" alt="">
+                            <div class="card-body">
+                                <h1 class="card-title">Quesadillas con queso y chorizo Ponderosa</h1>
+                                <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi ut magnam perferendis mollitia dolores odit distinctio ea a corporis?</p>
+                                <a href="#" class="btn btn-primary">Ver receta <i class="fa-solid fa-arrow-right"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 mb-4">
+                        <div class="card">
+                            <img src="./assets/images/thumb-receta.png" class="card-img-left img-fluid" alt="">
+                            <div class="card-body">
+                                <h1 class="card-title">Quesadillas con queso y chorizo Ponderosa</h1>
+                                <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi ut magnam perferendis mollitia dolores odit distinctio ea a corporis?</p>
+                                <a href="#" class="btn btn-primary">Ver receta <i class="fa-solid fa-arrow-right"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col text-center">
+                        <a href="#" class="btn btn-primary">Ver más <i class="fa-solid fa-arrow-right"></i></a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section  class="recetas-generico section-red py-60">
+            <div class="overlay"></div>
+            <div class="container-fluid">
+                <div class="row mb-5">
+                    <div class="col-lg-10 offset-lg-1 text-center">
+                        <h1>Recetas de temporada</h1>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-lg-4 mb-4">
+                        <div class="card">
+                            <img src="./assets/images/thumb-receta.png" class="card-img-left img-fluid" alt="">
+                            <div class="card-body">
+                                <h1 class="card-title">Quesadillas con queso y chorizo Ponderosa</h1>
+                                <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi ut magnam perferendis mollitia dolores odit distinctio ea a corporis?</p>
+                                <a href="#" class="btn btn-primary">Ver receta <i class="fa-solid fa-arrow-right"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 mb-4">
+                        <div class="card">
+                            <img src="./assets/images/thumb-receta.png" class="card-img-left img-fluid" alt="">
+                            <div class="card-body">
+                                <h1 class="card-title">Quesadillas con queso y chorizo Ponderosa</h1>
+                                <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi ut magnam perferendis mollitia dolores odit distinctio ea a corporis?</p>
+                                <a href="#" class="btn btn-primary">Ver receta <i class="fa-solid fa-arrow-right"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 mb-4">
+                        <div class="card">
+                            <img src="./assets/images/thumb-receta.png" class="card-img-left img-fluid" alt="">
+                            <div class="card-body">
+                                <h1 class="card-title">Quesadillas con queso y chorizo Ponderosa</h1>
+                                <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi ut magnam perferendis mollitia dolores odit distinctio ea a corporis?</p>
+                                <a href="#" class="btn btn-primary">Ver receta <i class="fa-solid fa-arrow-right"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col text-center">
+                        <a href="#" class="btn btn-primary">Ver más <i class="fa-solid fa-arrow-right"></i></a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="receta" class="section-bg-sandwich pt-60 pb-0">
+            <div class="overlay"></div>
+            <div class="container">
+                <div class="row mb-5 text-center">
+                    <div class="col">
+                        <h1>Sándwich casero</h1>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col">
+                        <div class="contenedor-receta">
+                            <div class="row">
+                                <div class="col-lg-6 p-5 pb-0 pb-lg-5 border-lg-end">
+                                    <h2>Ingredientes:</h2>
+                                    <ul>
+                                        <li>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nobis, ratione. Ea delectus sed adipisci illo cumque neque temporibus doloribus qui! Aspernatur, minus veritatis. Ratione, placeat vel est laboriosam possimus animi!</li>
+                                        <li>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nobis, ratione. Ea delectus sed adipisci illo cumque neque temporibus doloribus qui! Aspernatur, minus veritatis. Ratione, placeat vel est laboriosam possimus animi!</li>
+                                        <li>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nobis, ratione. Ea delectus sed adipisci illo cumque neque temporibus doloribus qui! Aspernatur, minus veritatis. Ratione, placeat vel est laboriosam possimus animi!</li>
+                                        <li>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nobis, ratione. Ea delectus sed adipisci illo cumque neque temporibus doloribus qui! Aspernatur, minus veritatis. Ratione, placeat vel est laboriosam possimus animi!</li>
+                                        <li>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nobis, ratione. Ea delectus sed adipisci illo cumque neque temporibus doloribus qui! Aspernatur, minus veritatis. Ratione, placeat vel est laboriosam possimus animi!</li>
+                                        <li>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nobis, ratione. Ea delectus sed adipisci illo cumque neque temporibus doloribus qui! Aspernatur, minus veritatis. Ratione, placeat vel est laboriosam possimus animi!</li>
+                                    </ul>
+                                </div>
+                                <div class="col-lg-6 p-5">
+                                    <h2>Intrucciones:</h2>
+                                    <ol>
+                                        <li>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nobis, ratione. Ea delectus sed adipisci illo cumque neque temporibus doloribus qui! Aspernatur, minus veritatis. Ratione, placeat vel est laboriosam possimus animi!</li>
+                                        <li>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nobis, ratione. Ea delectus sed adipisci illo cumque neque temporibus doloribus qui! Aspernatur, minus veritatis. Ratione, placeat vel est laboriosam possimus animi!</li>
+                                        <li>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nobis, ratione. Ea delectus sed adipisci illo cumque neque temporibus doloribus qui! Aspernatur, minus veritatis. Ratione, placeat vel est laboriosam possimus animi!</li>
+                                        <li>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nobis, ratione. Ea delectus sed adipisci illo cumque neque temporibus doloribus qui! Aspernatur, minus veritatis. Ratione, placeat vel est laboriosam possimus animi!</li>
+                                        <li>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nobis, ratione. Ea delectus sed adipisci illo cumque neque temporibus doloribus qui! Aspernatur, minus veritatis. Ratione, placeat vel est laboriosam possimus animi!</li>
+                                        <li>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nobis, ratione. Ea delectus sed adipisci illo cumque neque temporibus doloribus qui! Aspernatur, minus veritatis. Ratione, placeat vel est laboriosam possimus animi!</li>
+                                    </ol>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="before-consejos"></section>
+
+        <section  class="recetas-generico section-white py-60">
+            <div class="overlay"></div>
+            <div class="container-fluid">
+                <div class="row mb-5">
+                    <div class="col-lg-10 offset-lg-1 text-center">
+                        <h1>Conoce más recetas</h1>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-lg-4 mb-4">
+                        <div class="card">
+                            <img src="./assets/images/thumb-receta.png" class="card-img-left img-fluid" alt="">
+                            <div class="card-body">
+                                <h1 class="card-title">Quesadillas con queso y chorizo Ponderosa</h1>
+                                <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi ut magnam perferendis mollitia dolores odit distinctio ea a corporis?</p>
+                                <a href="#" class="btn btn-primary">Ver receta <i class="fa-solid fa-arrow-right"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 mb-4">
+                        <div class="card">
+                            <img src="./assets/images/thumb-receta.png" class="card-img-left img-fluid" alt="">
+                            <div class="card-body">
+                                <h1 class="card-title">Quesadillas con queso y chorizo Ponderosa</h1>
+                                <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi ut magnam perferendis mollitia dolores odit distinctio ea a corporis?</p>
+                                <a href="#" class="btn btn-primary">Ver receta <i class="fa-solid fa-arrow-right"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 mb-4">
+                        <div class="card">
+                            <img src="./assets/images/thumb-receta.png" class="card-img-left img-fluid" alt="">
+                            <div class="card-body">
+                                <h1 class="card-title">Quesadillas con queso y chorizo Ponderosa</h1>
+                                <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi ut magnam perferendis mollitia dolores odit distinctio ea a corporis?</p>
+                                <a href="#" class="btn btn-primary">Ver receta <i class="fa-solid fa-arrow-right"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col text-center">
+                        <a href="#" class="btn btn-primary">Ver más <i class="fa-solid fa-arrow-right"></i></a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="after-consejos"></section>
+
+        <section id="productos" class="section-gray py-60">
+            <div class="container">
+                <div class="row mb-5">
+                    <div class="col">
+                        <h1>Productos</h1>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col">
+                        <!-- Swiper -->
+                        <div class="swiper swiper-productos">
+                            <div class="swiper-pagination"></div>
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide">
+                                    <div class="card">
+                                        <img src="./assets/images/thumb-vertical.png" class="card-img-top img-fluid" alt="">
+                                        <div class="card-body">
+                                            <h1 class="card-title">Embutidos</h1 >
+                                            <a href="#" class="btn btn-primary">
+                                                Ver producto
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="card">
+                                        <img src="./assets/images/thumb-vertical.png" class="card-img-top img-fluid" alt="">
+                                        <div class="card-body">
+                                            <h1 class="card-title">Salchichas</h1 >
+                                            <a href="#" class="btn btn-primary">
+                                                Ver producto
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="card">
+                                        <img src="./assets/images/thumb-vertical.png" class="card-img-top img-fluid" alt="">
+                                        <div class="card-body">
+                                            <h1 class="card-title">Quesos</h1 >
+                                            <a href="#" class="btn btn-primary">
+                                                Ver producto
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="card">
+                                        <img src="./assets/images/thumb-vertical.png" class="card-img-top img-fluid" alt="">
+                                        <div class="card-body">
+                                            <h1 class="card-title">Embutidos</h1 >
+                                            <a href="#" class="btn btn-primary">
+                                                Ver producto
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="card">
+                                        <img src="./assets/images/thumb-vertical.png" class="card-img-top img-fluid" alt="">
+                                        <div class="card-body">
+                                            <h1 class="card-title">Salchichas</h1 >
+                                            <a href="#" class="btn btn-primary">
+                                                Ver producto
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="card">
+                                        <img src="./assets/images/thumb-vertical.png" class="card-img-top img-fluid" alt="">
+                                        <div class="card-body">
+                                            <h1 class="card-title">Quesos</h1 >
+                                            <a href="#" class="btn btn-primary">
+                                                Ver producto
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="card">
+                                        <img src="./assets/images/thumb-vertical.png" class="card-img-top img-fluid" alt="">
+                                        <div class="card-body">
+                                            <h1 class="card-title">Embutidos</h1 >
+                                            <a href="#" class="btn btn-primary">
+                                                Ver producto
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="card">
+                                        <img src="./assets/images/thumb-vertical.png" class="card-img-top img-fluid" alt="">
+                                        <div class="card-body">
+                                            <h1 class="card-title">Salchichas</h1 >
+                                            <a href="#" class="btn btn-primary">
+                                                Ver producto
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="card">
+                                        <img src="./assets/images/thumb-vertical.png" class="card-img-top img-fluid" alt="">
+                                        <div class="card-body">
+                                            <h1 class="card-title">Quesos</h1 >
+                                            <a href="#" class="btn btn-primary">
+                                                Ver producto
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-button-next"></div>
+                            <div class="swiper-button-prev"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="before-recetario"></section>
+
+        <section id="recetario" class="section-red curved-div-inward">
+            <div class="container">
+                <div class="row mb-5">
+                    <div class="col-lg-10 offset-lg-1 text-center">
+                        <h1>Recetario Ponderosa®</h1>
+                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptates ea voluptatum error eius, hic ullam optio impedit reiciendis doloremque nihil molestias eligendi ratione sint harum architecto culpa veniam cum accusantium!</p>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-lg-6 mb-4">
+                        <div class="card">
+                            <img src="./assets/images/thumb-receta.png" class="card-img-left img-fluid" alt="">
+                            <div class="card-body">
+                                <h1 class="card-title">Lorem ipsum dolor sit amet consectetur adipisicing elit</h1>
+                                <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi ut magnam perferendis mollitia dolores odit distinctio ea a corporis? Fuga accusantium eius ad? Ipsa non doloremque quas provident, eum error!</p>
+                                <a href="#" class="btn btn-primary">Ver receta <i class="fa-solid fa-arrow-right"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 mb-4">
+                        <div class="card">
+                            <img src="./assets/images/thumb-receta.png" class="card-img-left img-fluid" alt="">
+                            <div class="card-body">
+                                <h1 class="card-title">Lorem ipsum dolor sit amet consectetur adipisicing elit</h1>
+                                <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi ut magnam perferendis mollitia dolores odit distinctio ea a corporis? Fuga accusantium eius ad? Ipsa non doloremque quas provident, eum error!</p>
+                                <a href="#" class="btn btn-primary">Ver receta <i class="fa-solid fa-arrow-right"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 mb-4">
+                        <div class="card">
+                            <img src="./assets/images/thumb-receta.png" class="card-img-left img-fluid" alt="">
+                            <div class="card-body">
+                                <h1 class="card-title">Lorem ipsum dolor sit amet consectetur adipisicing elit</h1>
+                                <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi ut magnam perferendis mollitia dolores odit distinctio ea a corporis? Fuga accusantium eius ad? Ipsa non doloremque quas provident, eum error!</p>
+                                <a href="#" class="btn btn-primary">Ver receta <i class="fa-solid fa-arrow-right"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 mb-4">
+                        <div class="card">
+                            <img src="./assets/images/thumb-receta.png" class="card-img-left img-fluid" alt="">
+                            <div class="card-body">
+                                <h1 class="card-title">Lorem ipsum dolor sit amet consectetur adipisicing elit</h1>
+                                <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi ut magnam perferendis mollitia dolores odit distinctio ea a corporis? Fuga accusantium eius ad? Ipsa non doloremque quas provident, eum error!</p>
+                                <a href="#" class="btn btn-primary">Ver receta <i class="fa-solid fa-arrow-right"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col text-center">
+                        <a href="#" class="btn btn-primary">Ver más <i class="fa-solid fa-arrow-right"></i></a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="after-recetario"></section>
+
+        <section id="nuestra-historia" class="py-60">
+            <div class="overlay"></div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-6">
+                        <h1>Nuestra <span>historia</span></h1>
+                        <p>
+                            <span>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Obcaecati reiciendis numquam, voluptates atque veritatis provident nulla accusamus animi sit! Quo quae doloribus tempore labore ipsum placeat! Cumque temporibus illo magnam?</span>
+                        </p>
+                    </div>
+                    <div class="col-lg-6">
+                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sint dolor aut corporis aspernatur delectus at odio explicabo cupiditate, doloribus aliquid? Quos debitis at autem amet quam, temporibus id cumque quia.</p>
+                        <a href="#" class="btn">Conoce la historia completa <i class="fa-solid fa-arrow-right"></i></a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="before-consejos"></section>
+
+        <section id="consejos" class="section-white">
+            <div class="container">
+                <div class="row mb-5">
+                    <div class="col-lg-10 offset-lg-1 text-center">
+                        <h1>Consejos Útiles</h1>
+                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptates ea voluptatum error eius, hic ullam optio impedit reiciendis doloremque nihil molestias eligendi ratione sint harum architecto culpa veniam cum accusantium!</p>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col">
+                        <!-- Swiper -->
+                        <div class="swiper swiper-consejos">
+                            <div class="swiper-pagination"></div>
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide">
+                                    <div class="card">
+                                        <img src="./assets/images/thumb-square.png" class="card-img-top img-fluid" alt="">
+                                        <div class="card-body">
+                                            <h1 class="card-title">Cómo hacer el mejor queso fundido regio</h1>
+                                            <a href="#" class="btn-ver">
+                                                Ver <i class="fa-solid fa-arrow-right"></i>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="card">
+                                        <img src="./assets/images/thumb-square.png" class="card-img-top img-fluid" alt="">
+                                        <div class="card-body">
+                                            <h1 class="card-title">Cómo hacer el mejor queso fundido regio</h1>
+                                            <a href="#" class="btn-ver">
+                                                Ver <i class="fa-solid fa-arrow-right"></i>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="card">
+                                        <img src="./assets/images/thumb-square.png" class="card-img-top img-fluid" alt="">
+                                        <div class="card-body">
+                                            <h1 class="card-title">Cómo hacer el mejor queso fundido regio</h1>
+                                            <a href="#" class="btn-ver">
+                                                Ver <i class="fa-solid fa-arrow-right"></i>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="card">
+                                        <img src="./assets/images/thumb-square.png" class="card-img-top img-fluid" alt="">
+                                        <div class="card-body">
+                                            <h1 class="card-title">Cómo hacer el mejor queso fundido regio</h1>
+                                            <a href="#" class="btn-ver">
+                                                Ver <i class="fa-solid fa-arrow-right"></i>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="card">
+                                        <img src="./assets/images/thumb-square.png" class="card-img-top img-fluid" alt="">
+                                        <div class="card-body">
+                                            <h1 class="card-title">Cómo hacer el mejor queso fundido regio</h1>
+                                            <a href="#" class="btn-ver">
+                                                Ver <i class="fa-solid fa-arrow-right"></i>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="card">
+                                        <img src="./assets/images/thumb-square.png" class="card-img-top img-fluid" alt="">
+                                        <div class="card-body">
+                                            <h1 class="card-title">Cómo hacer el mejor queso fundido regio</h1>
+                                            <a href="#" class="btn-ver">
+                                                Ver <i class="fa-solid fa-arrow-right"></i>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="card">
+                                        <img src="./assets/images/thumb-square.png" class="card-img-top img-fluid" alt="">
+                                        <div class="card-body">
+                                            <h1 class="card-title">Cómo hacer el mejor queso fundido regio</h1>
+                                            <a href="#" class="btn-ver">
+                                                Ver <i class="fa-solid fa-arrow-right"></i>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="card">
+                                        <img src="./assets/images/thumb-square.png" class="card-img-top img-fluid" alt="">
+                                        <div class="card-body">
+                                            <h1 class="card-title">Cómo hacer el mejor queso fundido regio</h1>
+                                            <a href="#" class="btn-ver">
+                                                Ver <i class="fa-solid fa-arrow-right"></i>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="card">
+                                        <img src="./assets/images/thumb-square.png" class="card-img-top img-fluid" alt="">
+                                        <div class="card-body">
+                                            <h1 class="card-title">Cómo hacer el mejor queso fundido regio</h1>
+                                            <a href="#" class="btn-ver">
+                                                Ver <i class="fa-solid fa-arrow-right"></i>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-button-next"></div>
+                            <div class="swiper-button-prev"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- section class="after-consejos"></section -->
+
+        <section id="bg-aleatorio" class="">
+            <img src="./assets/images/logo-bg-aleatorio@2x.png" alt="" class="logo img-fluid">
+        </section>
+
+        <footer>
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-8">
+                        <div class="row">
+                            <div class="col-6 mb-4 mb-lg-0 col-lg-3 text-lg-center border-lg-end">
+                                <h1>Título 1</h1>
+                                <nav>
+                                    <ul class="list-unstyled">
+                                        <li>
+                                            <a href="#">
+                                                Elemento
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#">
+                                                Elemento
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#">
+                                                Elemento
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#">
+                                                Elemento
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#">
+                                                Elemento
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#">
+                                                Elemento
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </nav>
+                            </div>
+                            <div class="col-6 mb-4 mb-lg-0 col-lg-3 text-lg-center border-lg-end">
+                                <h1>Título 1</h1>
+                                <nav>
+                                    <ul class="list-unstyled">
+                                        <li>
+                                            <a href="#">
+                                                Elemento
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#">
+                                                Elemento
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#">
+                                                Elemento
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#">
+                                                Elemento
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#">
+                                                Elemento
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#">
+                                                Elemento
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </nav>
+                            </div>
+                            <div class="col-6 mb-4 mb-lg-0 col-lg-3 text-lg-center border-lg-end">
+                                <h1>Título 1</h1>
+                                <nav>
+                                    <ul class="list-unstyled">
+                                        <li>
+                                            <a href="#">
+                                                Elemento
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#">
+                                                Elemento
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#">
+                                                Elemento
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#">
+                                                Elemento
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#">
+                                                Elemento
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#">
+                                                Elemento
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </nav>
+                            </div>
+                            <div class="col-6 mb-4 mb-lg-0 col-lg-3 text-lg-center border-lg-end">
+                                <h1>Título 1</h1>
+                                <nav>
+                                    <ul class="list-unstyled">
+                                        <li>
+                                            <a href="#">
+                                                Elemento
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#">
+                                                Elemento
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#">
+                                                Elemento
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#">
+                                                Elemento
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#">
+                                                Elemento
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#">
+                                                Elemento
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </nav>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 offset-lg-1">
+                        <p class="text-uppercase fw-bold">Síguenos en nuestras redes</p>
+                        <ul class="social list-inline">
+                            <li class="list-inline-item">
+                                <a href="https://" target="_blank">
+                                    <i class="fa-brands fa-instagram"></i>
+                                </a>
+                            </li>
+                            <li class="list-inline-item">
+                                <a href="https://" target="_blank">
+                                    <i class="fa-brands fa-facebook"></i>
+                                </a>
+                            </li>
+                            <li class="list-inline-item">
+                                <a href="https://" target="_blank">
+                                    <i class="fa-brands fa-tiktok"></i>
+                                </a>
+                            </li>
+                        </ul>
+
+                        <ul class="list-unstyled">
+                            <li>
+                                <address>
+                                    <i class="fa-solid fa-location-pin"></i> José Santos Chocano 970<br>
+                                    San Nicolás de los Garza, N.L. México
+                                </address>
+                            </li>
+                            <li>
+                                <i class="fa-solid fa-headset"></i> <a href="tel:+528181581717">81 8158 1717</a>
+                            </li>
+                            <li>
+                                <i class="fa-solid fa-envelope"></i> <a href="mailto:ponderosa@bafar.com.mx">ponderosa@bafar.com.mx</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="row my-4">
+                    <div class="col">
+                        <hr>
+                    </div>
+                </div>
+                <div class="row text-center">
+                    <div class="col-12 mb-4">
+                        <a href="/">
+                            <img src="./assets/images/logo-rojo@2x.png" alt="" class="logo img-fluid">
+                        </a>
+                    </div>
+                    <div class="col-12">
+                        <p class="copyright-text">© 2024 <a href="https://grupobafar.com/" target="_blank"">Grupo Bafar</a>. Todos los derechos reservados.</p >
+                    </div>
+                </div>
+            </div>
+        </footer>
+
+        <!-- a href="https://wa.me/52614?text=Hola%20FOO%20BAR,%20necesito%20información." class="whatsapp" target="_blank">
+        <i class="fab fa-whatsapp whatsapp-icon"></i>
+    </a -->
+
+        <!-- script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script -->
+        <script src="./assets/js/app.bundle.js"></script>
+    </body>
+</html>
