@@ -202,7 +202,7 @@
                 </div>
                 <div class="row text-center">
                     <div class="col-12 mb-4">
-                        <a href="/">
+                        <a href="<?php echo esc_url(home_url()); ?>">
                             <img src="<?php echo esc_url(
                                 get_template_directory_uri()
                             ); ?>/assets/images/logo-rojo@2x.png" alt="" class="logo img-fluid">
