@@ -625,42 +625,40 @@
                     </div>
                 </div>
                 <div class="row">
-                    <div class="col-lg-4 mb-4">
-                        <div class="card">
-                            <img src="<?php echo esc_url(
-                                get_template_directory_uri()
-                            ); ?>/assets/images/thumb-receta.png" class="card-img-left img-fluid" alt="">
-                            <div class="card-body">
-                                <h1 class="card-title">Quesadillas con queso y chorizo Ponderosa</h1>
-                                <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi ut magnam perferendis mollitia dolores odit distinctio ea a corporis?</p>
-                                <a href="#" class="btn btn-primary">Ver receta <i class="fa-solid fa-arrow-right"></i></a>
+                    <?php
+                    $args = [
+                        "post_type" => "receta", // Custom post type
+                        "posts_per_page" => 3, // Number of posts to display
+                        "orderby" => "date", // Order by date
+                        "order" => "DESC", // Latest posts first
+                    ];
+
+                    $receta_query = new WP_Query($args);
+
+                    if ($receta_query->have_posts()):
+                        while ($receta_query->have_posts()):
+                            $receta_query->the_post(); ?>
+                            <div class="col-lg-4 mb-4">
+                                <div class="card">
+                                    <img src="<?php echo esc_url(
+                                        get_template_directory_uri()
+                                    ); ?>/assets/images/thumb-receta.png" class="card-img-left img-fluid" alt="">
+                                    <div class="card-body">
+                                        <h1 class="card-title"><?php the_title(); ?></h1>
+                                        <p class="card-text"><?php the_excerpt(); ?></p>
+                                        <a href="<?php the_permalink(); ?>" class="btn btn-primary">Ver receta <i class="fa-solid fa-arrow-right"></i></a>
+                                    </div>
+                                </div>
                             </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-4 mb-4">
-                        <div class="card">
-                            <img src="<?php echo esc_url(
-                                get_template_directory_uri()
-                            ); ?>/assets/images/thumb-receta.png" class="card-img-left img-fluid" alt="">
-                            <div class="card-body">
-                                <h1 class="card-title">Quesadillas con queso y chorizo Ponderosa</h1>
-                                <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi ut magnam perferendis mollitia dolores odit distinctio ea a corporis?</p>
-                                <a href="#" class="btn btn-primary">Ver receta <i class="fa-solid fa-arrow-right"></i></a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-4 mb-4">
-                        <div class="card">
-                            <img src="<?php echo esc_url(
-                                get_template_directory_uri()
-                            ); ?>/assets/images/thumb-receta.png" class="card-img-left img-fluid" alt="">
-                            <div class="card-body">
-                                <h1 class="card-title">Quesadillas con queso y chorizo Ponderosa</h1>
-                                <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi ut magnam perferendis mollitia dolores odit distinctio ea a corporis?</p>
-                                <a href="#" class="btn btn-primary">Ver receta <i class="fa-solid fa-arrow-right"></i></a>
-                            </div>
-                        </div>
-                    </div>
+                        <?php
+                        endwhile;
+                        wp_reset_postdata();
+                    else:
+                         ?>
+                        <p>No se encontraron recetas.</p>
+                    <?php
+                    endif;
+                    ?>
                 </div>
                 <div class="row">
                     <div class="col text-center">
