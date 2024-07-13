@@ -1,8 +1,7 @@
 <?php get_header(); ?>
 
-        <section id="jumbotron" style="background: url('<?php echo get_the_post_thumbnail_url(
-            get_the_ID(),
-            "full"
+        <section id="jumbotron" style="background: url('<?php echo esc_url(
+            get_the_post_thumbnail_url(get_the_ID(), "full")
         ); ?>') no-repeat; background-size: cover; background-position: center;">
             <div class="overlay"></div>
             <div class="container">
@@ -75,6 +74,7 @@
                         "posts_per_page" => 3, // Number of posts to display
                         "orderby" => "date", // Order by date
                         "order" => "DESC", // Latest posts first
+                        "post__not_in" => [$current_post_id], // Exclude the current post
                     ];
 
                     $receta_query = new WP_Query($args);
