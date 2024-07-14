@@ -63,7 +63,7 @@
 
         <section class="before-consejos"></section>
 
-        <section  class="recetas-generico section-white py-60">
+        <section  class="recetas-generico section-gray py-60">
             <div class="overlay"></div>
             <div class="container-fluid">
                 <div class="row mb-5">
