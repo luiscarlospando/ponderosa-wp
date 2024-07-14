@@ -90,7 +90,6 @@
                             $receta_query->the_post(); ?>
                             <div class="col-lg-4 mb-4">
                                 <div class="card">
-                                    <a href="<?php the_permalink(); ?>">
                                         <?php the_post_thumbnail(
                                             "thumb-receta",
                                             [
@@ -98,7 +97,6 @@
                                                     "card-img-left img-fluid",
                                             ]
                                         ); ?>
-                                    </a>
                                     <div class="card-body">
                                         <a href="<?php the_permalink(); ?>">
                                             <h1 class="card-title"><?php the_title(); ?></h1>
