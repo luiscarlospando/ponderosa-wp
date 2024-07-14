@@ -23,7 +23,7 @@
             <div class="container">
                 <div class="row mb-5 text-center">
                     <div class="col">
-                        <h1>Sándwich casero</h1>
+                        <h1><php the_title(); ?></h1>
                     </div>
                 </div>
                 <div class="row">
