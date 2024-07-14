@@ -16,7 +16,9 @@
             </div>
         </section>
 
-        <section id="receta" class="section-bg-sandwich pt-60 pb-0">
+        <section id="receta" class="section-bg-sandwich pt-60 pb-0" style="background: url('<?php echo esc_url(
+            get_the_post_thumbnail_url(get_the_ID(), "full")
+        ); ?>') no-repeat; background-size: cover; background-position: center;">
             <div class="overlay"></div>
             <div class="container">
                 <div class="row mb-5 text-center">
@@ -59,9 +61,7 @@
 
         <section class="before-consejos"></section>
 
-        <section  class="recetas-generico section-white py-60" style="background: url('<?php echo esc_url(
-            get_the_post_thumbnail_url(get_the_ID(), "full")
-        ); ?>') no-repeat; background-size: cover; background-position: center;">
+        <section  class="recetas-generico section-white py-60">
             <div class="overlay"></div>
             <div class="container-fluid">
                 <div class="row mb-5">
