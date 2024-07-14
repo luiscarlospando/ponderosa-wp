@@ -269,6 +269,7 @@
         <section class="after-consejos"></section>
 
         <section id="productos" class="section-bg-salchichas py-60">
+            <div class="overlay"></div>
             <div class="container">
                 <div class="row mb-5">
                     <div class="col">
