@@ -31,54 +31,32 @@
                         <div class="contenedor-receta">
                             <div class="row">
                                 <div class="col-lg-6 p-5 pb-0 pb-lg-5 border-lg-end">
-                                    <h2>Ingredientes:</h2>
-                                    <?php // Check if the current post has the 'Receta' field group
-                                    if (have_rows("Receta")):
-                                        // Loop through the rows of the 'Receta' field group
-                                        while (have_rows("Receta")):
-                                            the_row();
+                                    <?php
+                                    // Get the values of the custom fields 'ingredientes' and 'instrucciones'
+                                    $ingredientes = get_field("ingredientes");
 
-                                            // Get the values of the custom fields 'ingredientes' and 'instrucciones'
-                                            $ingredientes = get_sub_field(
-                                                "ingredientes"
-                                            );
-
-                                            // Print the custom fields if they have values
-                                            if ($ingredientes):
-                                                echo "<h2>Ingredientes:</h2>";
-                                                echo "<p>" .
-                                                    esc_html($ingredientes) .
-                                                    "</p>";
-                                            endif;
-                                        endwhile;
-                                        // No rows found
-                                    else:
-                                        echo "<p>No hay información de la receta disponible.</p>";
-                                    endif; ?>
+                                    // Print the custom fields if they have values
+                                    if ($ingredientes):
+                                        echo "<h2>Ingredientes:</h2>";
+                                        echo "<p>" .
+                                            esc_html($ingredientes) .
+                                            "</p>";
+                                    endif;
+                                    ?>
                                 </div>
                                 <div class="col-lg-6 p-5">
-                                    <?php // Check if the current post has the 'Receta' field group
-                                    if (have_rows("Receta")):
-                                        // Loop through the rows of the 'Receta' field group
-                                        while (have_rows("Receta")):
-                                            the_row();
+                                    <?php
+                                    // Get the values of the custom fields 'ingredientes' and 'instrucciones'
+                                    $instrucciones = get_field("instrucciones");
 
-                                            // Get the values of the custom fields 'ingredientes' and 'instrucciones'
-                                            $instrucciones = get_sub_field(
-                                                "instrucciones"
-                                            );
-
-                                            if ($instrucciones):
-                                                echo "<h2>Instrucciones:</h2>";
-                                                echo "<p>" .
-                                                    esc_html($instrucciones) .
-                                                    "</p>";
-                                            endif;
-                                        endwhile;
-                                        // No rows found
-                                    else:
-                                        echo "<p>No hay información de la receta disponible.</p>";
-                                    endif; ?>
+                                    // Print the custom fields if they have values
+                                    if ($instrucciones):
+                                        echo "<h2>Instrucciones:</h2>";
+                                        echo "<p>" .
+                                            esc_html($instrucciones) .
+                                            "</p>";
+                                    endif;
+                                    ?>
                                 </div>
                             </div>
                         </div>
