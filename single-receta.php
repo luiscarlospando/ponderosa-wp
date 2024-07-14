@@ -38,9 +38,7 @@
                                     // Print the custom fields if they have values
                                     if ($ingredientes):
                                         echo "<h2>Ingredientes:</h2>";
-                                        echo "<p>" .
-                                            esc_html($ingredientes) .
-                                            "</p>";
+                                        echo $ingredientes;
                                     endif;
                                     ?>
                                 </div>
@@ -52,9 +50,7 @@
                                     // Print the custom fields if they have values
                                     if ($instrucciones):
                                         echo "<h2>Instrucciones:</h2>";
-                                        echo "<p>" .
-                                            esc_html($instrucciones) .
-                                            "</p>";
+                                        echo $instrucciones;
                                     endif;
                                     ?>
                                 </div>
