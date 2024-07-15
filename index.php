@@ -683,7 +683,7 @@
                     <div class="col">
                         <?php
                         $swiperProductos = locate_template(
-                            "assets/includes/swiper-productos.php"
+                            "includes/swiper-productos.php"
                         );
                         if ($swiperProductos) {
                             load_template($swiperProductos, true);
