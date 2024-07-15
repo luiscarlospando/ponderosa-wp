@@ -22,7 +22,7 @@
                                 <div class="col-xl-4 my-auto">
                                     <figure>
                                         <?php the_post_thumbnail(
-                                            "thumb-receta",
+                                            "thumb-large",
                                             [
                                                 "class" => "img-fluid",
                                             ]
