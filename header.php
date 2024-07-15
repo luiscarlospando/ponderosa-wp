@@ -58,12 +58,18 @@
                 <nav>
                     <ul id="navmenu" class="list-unstyled">
                         <li>
-                            <a class="anchor" id="btn-nav-1" href="#"
+                            <a class="anchor" id="btn-nav-1" href="<?php if (
+                                !is_home()
+                            ):
+                                echo esc_url(home_url());
+                            endif; ?>#productos"
                                 >Productos</a
                             >
                         </li>
                         <li>
-                            <a class="anchor" id="btn-nav-2" href="#"
+                            <a class="anchor" id="btn-nav-2" href="<?php echo esc_url(
+                                get_permalink(2)
+                            ); ?>"
                                 >Nuestra Historia</a
                             >
                         </li>
