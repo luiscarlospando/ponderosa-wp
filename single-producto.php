@@ -56,54 +56,145 @@
                                         </div>
                                         <div class="col-xl-4">
                                             <ul class="list-unstyled especificaciones">
-                                                <li>
-                                                    <div class="especificacion">
-                                                        <div>420 g</div>
-                                                        <div>Porción</div>
-                                                    </div>
-                                                </li>
-                                                <li>
-                                                    <div class="especificacion">
-                                                        <div>144.5</div>
-                                                        <div>Contenido energético /kcal</div>
-                                                    </div>
-                                                </li>
-                                                <li>
-                                                    <div class="especificacion">
-                                                        <div>7.5 g</div>
-                                                        <div>Proteínas</div>
-                                                    </div>
-                                                </li>
-                                                <li>
-                                                    <div class="especificacion">
-                                                        <div>7.5 g</div>
-                                                        <div>Grasas (lípidos)</div>
-                                                    </div>
-                                                </li>
-                                                <li>
-                                                    <div class="especificacion">
-                                                        <div>4.94 g</div>
-                                                        <div>Grasa saturada</div>
-                                                    </div>
-                                                </li>
-                                                <li>
-                                                    <div class="especificacion">
-                                                        <div>12.00 g</div>
-                                                        <div>Carbohidratos</div>
-                                                    </div>
-                                                </li>
-                                                <li>
-                                                    <div class="especificacion">
-                                                        <div>12.00 g</div>
-                                                        <div>Azúcares</div>
-                                                    </div>
-                                                </li>
-                                                <li>
-                                                    <div class="especificacion">
-                                                        <div>125 mg</div>
-                                                        <div>Sodio</div>
-                                                    </div>
-                                                </li>
+                                                <?php if (
+                                                    get_field("porcion")
+                                                ): ?>
+                                                    <li>
+                                                        <div class="especificacion">
+                                                            <div><?php the_field(
+                                                                "porcion"
+                                                            ); ?></div>
+                                                            <div>Porción</div>
+                                                        </div>
+                                                    </li>
+                                                    <h2><?php the_field(
+                                                        "text_field"
+                                                    ); ?></h2>
+                                                <?php endif; ?>
+                                                <?php if (
+                                                    get_field(
+                                                        "contenido_energetico"
+                                                    )
+                                                ): ?>
+                                                    <li>
+                                                        <div class="especificacion">
+                                                            <div><?php the_field(
+                                                                "contenido_energetico"
+                                                            ); ?></div>
+                                                            <div>Porción</div>
+                                                        </div>
+                                                    </li>
+                                                    <h2><?php the_field(
+                                                        "text_field"
+                                                    ); ?></h2>
+                                                <?php endif; ?>
+                                                <?php if (
+                                                    get_field(
+                                                        "contenido_energetico"
+                                                    )
+                                                ): ?>
+                                                    <li>
+                                                        <div class="especificacion">
+                                                            <div><?php the_field(
+                                                                "contenido_energetico"
+                                                            ); ?></div>
+                                                            <div>Contenido energético /kcal</div>
+                                                        </div>
+                                                    </li>
+                                                    <h2><?php the_field(
+                                                        "text_field"
+                                                    ); ?></h2>
+                                                <?php endif; ?>
+                                                <?php if (
+                                                    get_field("proteinas")
+                                                ): ?>
+                                                    <li>
+                                                        <div class="especificacion">
+                                                            <div><?php the_field(
+                                                                "proteinas"
+                                                            ); ?></div>
+                                                            <div>Proteínas</div>
+                                                        </div>
+                                                    </li>
+                                                    <h2><?php the_field(
+                                                        "text_field"
+                                                    ); ?></h2>
+                                                <?php endif; ?>
+                                                <?php if (
+                                                    get_field("grasas_lipidos")
+                                                ): ?>
+                                                    <li>
+                                                        <div class="grasas">
+                                                            <div><?php the_field(
+                                                                "grasas_lipidos"
+                                                            ); ?></div>
+                                                            <div>Grasas (lípidos)</div>
+                                                        </div>
+                                                    </li>
+                                                    <h2><?php the_field(
+                                                        "text_field"
+                                                    ); ?></h2>
+                                                <?php endif; ?>
+                                                <?php if (
+                                                    get_field("grasa_saturada")
+                                                ): ?>
+                                                    <li>
+                                                        <div class="grasas">
+                                                            <div><?php the_field(
+                                                                "grasa_saturada"
+                                                            ); ?></div>
+                                                            <div>Grasa saturada</div>
+                                                        </div>
+                                                    </li>
+                                                    <h2><?php the_field(
+                                                        "text_field"
+                                                    ); ?></h2>
+                                                <?php endif; ?>
+                                                <?php if (
+                                                    get_field("carbohidratos")
+                                                ): ?>
+                                                    <li>
+                                                        <div class="grasas">
+                                                            <div><?php the_field(
+                                                                "carbohidratos"
+                                                            ); ?></div>
+                                                            <div>Carbohidratos</div>
+                                                        </div>
+                                                    </li>
+                                                    <h2><?php the_field(
+                                                        "text_field"
+                                                    ); ?></h2>
+                                                <?php endif; ?>
+                                                <?php if (
+                                                    get_field("azucares")
+                                                ): ?>
+                                                    <li>
+                                                        <div class="grasas">
+                                                            <div><?php the_field(
+                                                                "azucares"
+                                                            ); ?></div>
+                                                            <div>Azúcares</div>
+                                                        </div>
+                                                    </li>
+                                                    <h2><?php the_field(
+                                                        "text_field"
+                                                    ); ?></h2>
+                                                <?php endif; ?>
+                                                <?php if (
+                                                    get_field("sodio")
+                                                ): ?>
+                                                    <li>
+                                                        <div class="grasas">
+                                                            <div><?php the_field(
+                                                                "sodio"
+                                                            ); ?></div>
+                                                            <div>Sodio</div>
+                                                        </div>
+                                                    </li>
+                                                    <h2><?php the_field(
+                                                        "text_field"
+                                                    ); ?></h2>
+                                                <?php endif; ?>
                                             </ul>
                                         </div>
                                     </div>
