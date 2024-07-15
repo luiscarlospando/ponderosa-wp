@@ -144,9 +144,7 @@
                     <div class="d-none d-lg-block col-lg-5 my-auto text-center">
                         <nav>
                             <ul class="list-inline">
-                                <li class="<?php if (
-                                    is_home()
-                                ): ?>anchor<?php endif; ?> list-inline-item">
+                                <li class=" list-inline-item">
                                     <a href="<?php if (!is_home()):
                                         echo esc_url(home_url());
                                     endif; ?>#productos">Productos</a>
