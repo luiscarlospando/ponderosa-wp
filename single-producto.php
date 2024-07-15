@@ -72,12 +72,17 @@
                                                         get_template_directory_uri()
                                                     ); ?>/assets/images/thumb-receta.png" class="card-img-left img-fluid" alt="">
                                                     <div class="card-body">
-                                                        <h1 class="card-title"><?php echo esc_html(
-                                                            $receta_popular->post_title
-                                                        ); ?></h1>
-                                                        <p class="card-text"><?php echo esc_html(
-                                                            $receta_popular->post_content
-                                                        ); ?></p>
+                                                        <h1 class="card-title">
+                                                            <?php echo esc_html(
+                                                                $receta_popular->post_title
+                                                            ); ?>
+                                                        </h1>
+                                                        <p class="card-text">
+                                                            <?php echo apply_filters(
+                                                                "the_content",
+                                                                $receta_popular->post_content
+                                                            ); ?>
+                                                        </p>
                                                         <a href="<?php echo esc_html(
                                                             get_permalink(
                                                                 $receta_popular->ID
