@@ -62,16 +62,29 @@
                                                 endif; ?>
                                             </ul>
                                             <h2>Receta popular</h2>
-                                            <div class="card">
-                                                <img src="<?php echo esc_url(
-                                                    get_template_directory_uri()
-                                                ); ?>/assets/images/thumb-receta.png" class="card-img-left img-fluid" alt="">
-                                                <div class="card-body">
-                                                    <h1 class="card-title">Lorem ipsum dolor sit amet consectetur adipisicing elit</h1>
-                                                    <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi ut magnam perferendis mollitia dolores odit distinctio ea a corporis? Fuga accusantium eius ad? Ipsa non doloremque quas provident, eum error!</p>
-                                                    <a href="#" class="btn btn-primary">Ver receta <i class="fa-solid fa-arrow-right"></i></a>
+                                            <?php
+                                            $receta_popular = get_field(
+                                                "receta_popular"
+                                            );
+                                            if ($receta_popular): ?>
+                                                <div class="card">
+                                                    <img src="<?php echo esc_url(
+                                                        get_template_directory_uri()
+                                                    ); ?>/assets/images/thumb-receta.png" class="card-img-left img-fluid" alt="">
+                                                    <div class="card-body">
+                                                        <h1 class="card-title"><?php echo esc_html(
+                                                            $receta_popular->post_title
+                                                        ); ?></h1>
+                                                        <p class="card-text"><?php echo esc_html(
+                                                            $receta_popular->post_content
+                                                        ); ?></p>
+                                                        <a href="<?php echo esc_html(
+                                                            $receta_popular->post_permalink
+                                                        ); ?>" class="btn btn-primary">Ver receta <i class="fa-solid fa-arrow-right"></i></a>
+                                                    </div>
                                                 </div>
-                                            </div>
+                                            <?php endif;
+                                            ?>
                                         </div>
                                         <div class="col-xl-4">
                                             <ul class="list-unstyled especificaciones">
