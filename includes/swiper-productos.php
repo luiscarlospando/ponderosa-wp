@@ -55,7 +55,7 @@
         </div>
         <div class="swiper-slide">
             <div class="card">
-                <a href="<?php echo get_category_link(5); ?>">
+                <a href="<?php echo get_category_link(7); ?>">
                     <img src="<?php echo esc_url(
                         get_template_directory_uri()
                     ); ?>/assets/images/thumb-embutidos.png" class="card-img-top img-fluid" alt="">
@@ -63,7 +63,7 @@
                 <div class="card-body">
                     <h1 class="card-title">Embutidos</h1>
                     <a href="<?php echo get_category_link(
-                        5
+                        7
                     ); ?>" class="btn btn-primary">
                         Ver productos
                     </a>
@@ -72,7 +72,7 @@
         </div>
         <div class="swiper-slide">
             <div class="card">
-                <a href="<?php echo get_category_link(4); ?>">
+                <a href="<?php echo get_category_link(8); ?>">
                     <img src="<?php echo esc_url(
                         get_template_directory_uri()
                     ); ?>/assets/images/thumb-salchichas.png" class="card-img-top img-fluid" alt="">
@@ -80,7 +80,7 @@
                 <div class="card-body">
                     <h1 class="card-title">Salchichas</h1>
                     <a href="<?php echo get_category_link(
-                        4
+                        8
                     ); ?>" class="btn btn-primary">
                         Ver productos
                     </a>
@@ -89,7 +89,7 @@
         </div>
         <div class="swiper-slide">
             <div class="card">
-                <a href="<?php echo get_category_link(6); ?>">
+                <a href="<?php echo get_category_link(9); ?>">
                     <img src="<?php echo esc_url(
                         get_template_directory_uri()
                     ); ?>/assets/images/thumb-quesos.png" class="card-img-top img-fluid" alt="">
@@ -97,7 +97,7 @@
                 <div class="card-body">
                     <h1 class="card-title">Quesos</h1>
                     <a href="<?php echo get_category_link(
-                        6
+                        9
                     ); ?>" class="btn btn-primary">
                         Ver productos
                     </a>
