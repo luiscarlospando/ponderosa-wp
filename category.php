@@ -13,84 +13,35 @@
                     <div class="swiper swiper-productos">
                         <div class="swiper-pagination"></div>
                         <div class="swiper-wrapper">
-                            <div class="swiper-slide">
-                                <div class="card">
-                                    <img src="<?php echo esc_url(
-                                        get_template_directory_uri()
-                                    ); ?>/assets/images/thumb-embutidos.png" class="card-img-top img-fluid" alt="">
-                                    <div class="card-body">
-                                        <h1 class="card-title">Embutidos</h1 >
-                                        <a href="#" class="btn btn-primary">
-                                            Ver productos
+                            <?php if (have_posts()):
+                                while (have_posts()):
+                                    the_post(); ?>
+                                <div class="swiper-slide">
+                                    <div class="card">
+                                        <a href="<?php the_permalink(); ?>">
+                                            <?php the_post_thumbnail(
+                                                "thumb-vertical",
+                                                [
+                                                    "class" =>
+                                                        "card-img-top img-fluid",
+                                                ]
+                                            ); ?>
                                         </a>
+                                        <div class="card-body">
+                                            <h1 class="card-title"><?php the_title(); ?></h1 >
+                                            <a href="<?php the_permalink(); ?>" class="btn btn-primary">
+                                                Ver productos
+                                            </a>
+                                        </div>
                                     </div>
                                 </div>
-                            </div>
-                            <div class="swiper-slide">
-                                <div class="card">
-                                    <img src="<?php echo esc_url(
-                                        get_template_directory_uri()
-                                    ); ?>/assets/images/thumb-salchichas.png" class="card-img-top img-fluid" alt="">
-                                    <div class="card-body">
-                                        <h1 class="card-title">Salchichas</h1 >
-                                        <a href="#" class="btn btn-primary">
-                                            Ver productos
-                                        </a>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="swiper-slide">
-                                <div class="card">
-                                    <img src="<?php echo esc_url(
-                                        get_template_directory_uri()
-                                    ); ?>/assets/images/thumb-quesos.png" class="card-img-top img-fluid" alt="">
-                                    <div class="card-body">
-                                        <h1 class="card-title">Quesos</h1 >
-                                        <a href="#" class="btn btn-primary">
-                                            Ver productos
-                                        </a>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="swiper-slide">
-                                <div class="card">
-                                    <img src="<?php echo esc_url(
-                                        get_template_directory_uri()
-                                    ); ?>/assets/images/thumb-embutidos.png" class="card-img-top img-fluid" alt="">
-                                    <div class="card-body">
-                                        <h1 class="card-title">Embutidos</h1 >
-                                        <a href="#" class="btn btn-primary">
-                                            Ver productos
-                                        </a>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="swiper-slide">
-                                <div class="card">
-                                    <img src="<?php echo esc_url(
-                                        get_template_directory_uri()
-                                    ); ?>/assets/images/thumb-salchichas.png" class="card-img-top img-fluid" alt="">
-                                    <div class="card-body">
-                                        <h1 class="card-title">Salchichas</h1 >
-                                        <a href="#" class="btn btn-primary">
-                                            Ver productos
-                                        </a>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="swiper-slide">
-                                <div class="card">
-                                    <img src="<?php echo esc_url(
-                                        get_template_directory_uri()
-                                    ); ?>/assets/images/thumb-quesos.png" class="card-img-top img-fluid" alt="">
-                                    <div class="card-body">
-                                        <h1 class="card-title">Quesos</h1 >
-                                        <a href="#" class="btn btn-primary">
-                                            Ver productos
-                                        </a>
-                                    </div>
-                                </div>
-                            </div>
+                            <?php
+                                endwhile; ?>
+                            <?php
+                            else:
+                                 ?>
+                            <?php
+                            endif; ?>
                         </div>
                         <div class="swiper-button-next"></div>
                         <div class="swiper-button-prev"></div>

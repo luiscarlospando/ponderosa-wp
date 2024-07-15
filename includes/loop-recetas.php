@@ -25,7 +25,9 @@ if ($receta_query->have_posts()):
                     <a href="<?php the_permalink(); ?>">
                         <h1 class="card-title"><?php the_title(); ?></h1>
                     </a>
-                    <p class="card-text"><?php the_excerpt(); ?></p>
+                    <p class="card-text"><?php html5wp_excerpt(
+                        "html5wp_index"
+                    ); ?></p>
                     <a href="<?php the_permalink(); ?>" class="btn btn-primary">Ver receta <i class="fa-solid fa-arrow-right"></i></a>
                 </div>
             </div>
