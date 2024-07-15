@@ -217,7 +217,7 @@
                                     <div class="card">
                                         <img src="<?php echo esc_url(
                                             get_template_directory_uri()
-                                        ); ?>/assets/images/thumb-vertical.png" class="card-img-top img-fluid" alt="">
+                                        ); ?>/assets/images/thumb-embutidos.png" class="card-img-top img-fluid" alt="">
                                         <div class="card-body">
                                             <h1 class="card-title">Embutidos</h1 >
                                             <a href="#" class="btn btn-primary">
@@ -230,7 +230,7 @@
                                     <div class="card">
                                         <img src="<?php echo esc_url(
                                             get_template_directory_uri()
-                                        ); ?>/assets/images/thumb-vertical.png" class="card-img-top img-fluid" alt="">
+                                        ); ?>/assets/images/thumb-salchichas.png" class="card-img-top img-fluid" alt="">
                                         <div class="card-body">
                                             <h1 class="card-title">Salchichas</h1 >
                                             <a href="#" class="btn btn-primary">
@@ -243,85 +243,7 @@
                                     <div class="card">
                                         <img src="<?php echo esc_url(
                                             get_template_directory_uri()
-                                        ); ?>/assets/images/thumb-vertical.png" class="card-img-top img-fluid" alt="">
-                                        <div class="card-body">
-                                            <h1 class="card-title">Quesos</h1 >
-                                            <a href="#" class="btn btn-primary">
-                                                Ver producto
-                                            </a>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="swiper-slide">
-                                    <div class="card">
-                                        <img src="<?php echo esc_url(
-                                            get_template_directory_uri()
-                                        ); ?>/assets/images/thumb-vertical.png" class="card-img-top img-fluid" alt="">
-                                        <div class="card-body">
-                                            <h1 class="card-title">Embutidos</h1 >
-                                            <a href="#" class="btn btn-primary">
-                                                Ver producto
-                                            </a>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="swiper-slide">
-                                    <div class="card">
-                                        <img src="<?php echo esc_url(
-                                            get_template_directory_uri()
-                                        ); ?>/assets/images/thumb-vertical.png" class="card-img-top img-fluid" alt="">
-                                        <div class="card-body">
-                                            <h1 class="card-title">Salchichas</h1 >
-                                            <a href="#" class="btn btn-primary">
-                                                Ver producto
-                                            </a>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="swiper-slide">
-                                    <div class="card">
-                                        <img src="<?php echo esc_url(
-                                            get_template_directory_uri()
-                                        ); ?>/assets/images/thumb-vertical.png" class="card-img-top img-fluid" alt="">
-                                        <div class="card-body">
-                                            <h1 class="card-title">Quesos</h1 >
-                                            <a href="#" class="btn btn-primary">
-                                                Ver producto
-                                            </a>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="swiper-slide">
-                                    <div class="card">
-                                        <img src="<?php echo esc_url(
-                                            get_template_directory_uri()
-                                        ); ?>/assets/images/thumb-vertical.png" class="card-img-top img-fluid" alt="">
-                                        <div class="card-body">
-                                            <h1 class="card-title">Embutidos</h1 >
-                                            <a href="#" class="btn btn-primary">
-                                                Ver producto
-                                            </a>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="swiper-slide">
-                                    <div class="card">
-                                        <img src="<?php echo esc_url(
-                                            get_template_directory_uri()
-                                        ); ?>/assets/images/thumb-vertical.png" class="card-img-top img-fluid" alt="">
-                                        <div class="card-body">
-                                            <h1 class="card-title">Salchichas</h1 >
-                                            <a href="#" class="btn btn-primary">
-                                                Ver producto
-                                            </a>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="swiper-slide">
-                                    <div class="card">
-                                        <img src="<?php echo esc_url(
-                                            get_template_directory_uri()
-                                        ); ?>/assets/images/thumb-vertical.png" class="card-img-top img-fluid" alt="">
+                                        ); ?>/assets/images/thumb-quesos.png" class="card-img-top img-fluid" alt="">
                                         <div class="card-body">
                                             <h1 class="card-title">Quesos</h1 >
                                             <a href="#" class="btn btn-primary">
