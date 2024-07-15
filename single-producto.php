@@ -34,9 +34,7 @@
                                         <div class="col-xl-8 mb-4 mb-xl-0">
                                             <h1><?php the_title(); ?></h1>
                                             <?php the_content(); ?>
-                                            <?php edit_post_link();
-            // Always handy to have Edit Post Links available.
-            ?>
+                                            <?php edit_post_link(); ?>
                                             <h2>Presentación</h2>
                                             <ul class="list-inline">
                                                 <li class="list-inline-item">- 8 pz</li>
@@ -81,23 +79,6 @@
                                                             <div><?php the_field(
                                                                 "contenido_energetico"
                                                             ); ?></div>
-                                                            <div>Porción</div>
-                                                        </div>
-                                                    </li>
-                                                    <h2><?php the_field(
-                                                        "text_field"
-                                                    ); ?></h2>
-                                                <?php endif; ?>
-                                                <?php if (
-                                                    get_field(
-                                                        "contenido_energetico"
-                                                    )
-                                                ): ?>
-                                                    <li>
-                                                        <div class="especificacion">
-                                                            <div><?php the_field(
-                                                                "contenido_energetico"
-                                                            ); ?></div>
                                                             <div>Contenido energético /kcal</div>
                                                         </div>
                                                     </li>
@@ -124,7 +105,7 @@
                                                     get_field("grasas_lipidos")
                                                 ): ?>
                                                     <li>
-                                                        <div class="grasas">
+                                                        <div class="especificacion">
                                                             <div><?php the_field(
                                                                 "grasas_lipidos"
                                                             ); ?></div>
@@ -139,7 +120,7 @@
                                                     get_field("grasa_saturada")
                                                 ): ?>
                                                     <li>
-                                                        <div class="grasas">
+                                                        <div class="especificacion">
                                                             <div><?php the_field(
                                                                 "grasa_saturada"
                                                             ); ?></div>
@@ -154,7 +135,7 @@
                                                     get_field("carbohidratos")
                                                 ): ?>
                                                     <li>
-                                                        <div class="grasas">
+                                                        <div class="especificacion">
                                                             <div><?php the_field(
                                                                 "carbohidratos"
                                                             ); ?></div>
@@ -169,7 +150,7 @@
                                                     get_field("azucares")
                                                 ): ?>
                                                     <li>
-                                                        <div class="grasas">
+                                                        <div class="especificacion">
                                                             <div><?php the_field(
                                                                 "azucares"
                                                             ); ?></div>
@@ -184,7 +165,7 @@
                                                     get_field("sodio")
                                                 ): ?>
                                                     <li>
-                                                        <div class="grasas">
+                                                        <div class="especificacion">
                                                             <div><?php the_field(
                                                                 "sodio"
                                                             ); ?></div>
