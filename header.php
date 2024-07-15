@@ -58,34 +58,48 @@
                 <nav>
                     <ul id="navmenu" class="list-unstyled">
                         <li>
-                            <a class="anchor" id="btn-nav-1" href="<?php if (
-                                !is_home()
-                            ):
-                                echo esc_url(home_url());
-                            endif; ?>#productos"
+                            <a <?php if (
+                                is_home()
+                            ): ?>class="anchor"<?php endif; ?> id="btn-nav-1" href="<?php if (
+     !is_home()
+ ):
+     echo esc_url(home_url());
+ endif; ?>#productos"
                                 >Productos</a
                             >
                         </li>
                         <li>
-                            <a class="anchor" id="btn-nav-2" href="<?php echo esc_url(
+                            <a id="btn-nav-2" href="<?php echo esc_url(
                                 get_permalink(2)
                             ); ?>"
                                 >Nuestra Historia</a
                             >
                         </li>
                         <li>
-                            <a class="anchor" id="btn-nav-3" href="#"
+                            <a <?php if (
+                                is_home()
+                            ): ?>class="anchor"<?php endif; ?> id="btn-nav-3" href="<?php if (
+     !is_home()
+ ):
+     echo esc_url(home_url());
+ endif; ?>#recetario"
                                 >Recetas</a
                             >
                         </li>
                         <li>
-                            <a class="anchor" id="btn-nav-4" href="#"
+                            <a <?php if (
+                                is_home()
+                            ): ?>class="anchor"<?php endif; ?> id="btn-nav-4" href="<?php if (
+     !is_home()
+ ):
+     echo esc_url(home_url());
+ endif; ?>#consejos"
                                 >Consejos Prácticos</a
                             >
                         </li>
                     </ul>
                 </nav>
-                <a href="#" class="anchor btn btn-primary" id="btn-contacto"
+                <a href="#contacto" class="anchor btn btn-primary" id="btn-contacto"
                     >Contáctanos</a
                 >
                 <div id="social">
@@ -130,14 +144,24 @@
                     <div class="d-none d-lg-block col-lg-5 my-auto text-center">
                         <nav>
                             <ul class="list-inline">
-                                <li class="list-inline-item">
-                                    <a href="">Productos</a>
+                                <li class="<?php if (
+                                    is_home()
+                                ): ?>anchor<?php endif; ?> list-inline-item">
+                                    <a href="<?php if (!is_home()):
+                                        echo esc_url(home_url());
+                                    endif; ?>#productos">Productos</a>
                                 </li>
                                 <li class="list-inline-item">
-                                    <a href="">Nuestra Historia</a>
+                                    <a href="<?php echo esc_url(
+                                        get_permalink(2)
+                                    ); ?>">Nuestra Historia</a>
                                 </li>
-                                <li class="list-inline-item">
-                                    <a href="">Recetas</a>
+                                <li class="<?php if (
+                                    is_home()
+                                ): ?>anchor<?php endif; ?> list-inline-item">
+                                    <a href="<?php if (!is_home()):
+                                        echo esc_url(home_url());
+                                    endif; ?>#recetario">Recetas</a>
                                 </li>
                             </ul>
                         </nav>
@@ -157,11 +181,15 @@
                     <div class="col-lg-5 d-none d-lg-block my-auto text-center">
                         <nav>
                             <ul class="list-inline">
-                                <li class="list-inline-item">
-                                    <a href="">Consejos Prácticos</a>
+                                <li class="<?php if (
+                                    is_home()
+                                ): ?>anchor<?php endif; ?> list-inline-item">
+                                    <a href="<?php if (!is_home()):
+                                        echo esc_url(home_url());
+                                    endif; ?>#consejos">Consejos Prácticos</a>
                                 </li>
-                                <li class="list-inline-item">
-                                    <a href="">Contacto</a>
+                                <li class="anchor list-inline-item">
+                                    <a href="#contacto">Contacto</a>
                                 </li>
                                 <li class="list-inline-item">
                                     <ul class="list-inline">

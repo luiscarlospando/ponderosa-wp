@@ -4,7 +4,7 @@
             ); ?>/assets/images/logo-bg-aleatorio@2x.png" alt="" class="logo img-fluid">
         </section>
 
-        <footer>
+        <footer id="contacto">
             <div class="container">
                 <div class="row">
                     <div class="col-lg-8">
