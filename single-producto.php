@@ -79,7 +79,9 @@
                                                             $receta_popular->post_content
                                                         ); ?></p>
                                                         <a href="<?php echo esc_html(
-                                                            $receta_popular->post_permalink
+                                                            get_permalink(
+                                                                $receta_popular->ID
+                                                            )
                                                         ); ?>" class="btn btn-primary">Ver receta <i class="fa-solid fa-arrow-right"></i></a>
                                                     </div>
                                                 </div>
