@@ -221,7 +221,7 @@
                                         <div class="card-body">
                                             <h1 class="card-title">Embutidos</h1 >
                                             <a href="#" class="btn btn-primary">
-                                                Ver producto
+                                                Ver productos
                                             </a>
                                         </div>
                                     </div>
@@ -234,7 +234,7 @@
                                         <div class="card-body">
                                             <h1 class="card-title">Salchichas</h1 >
                                             <a href="#" class="btn btn-primary">
-                                                Ver producto
+                                                Ver productos
                                             </a>
                                         </div>
                                     </div>
@@ -247,7 +247,7 @@
                                         <div class="card-body">
                                             <h1 class="card-title">Quesos</h1 >
                                             <a href="#" class="btn btn-primary">
-                                                Ver producto
+                                                Ver productos
                                             </a>
                                         </div>
                                     </div>
@@ -260,7 +260,7 @@
                                         <div class="card-body">
                                             <h1 class="card-title">Embutidos</h1 >
                                             <a href="#" class="btn btn-primary">
-                                                Ver producto
+                                                Ver productos
                                             </a>
                                         </div>
                                     </div>
@@ -273,7 +273,7 @@
                                         <div class="card-body">
                                             <h1 class="card-title">Salchichas</h1 >
                                             <a href="#" class="btn btn-primary">
-                                                Ver producto
+                                                Ver productos
                                             </a>
                                         </div>
                                     </div>
@@ -286,7 +286,7 @@
                                         <div class="card-body">
                                             <h1 class="card-title">Quesos</h1 >
                                             <a href="#" class="btn btn-primary">
-                                                Ver producto
+                                                Ver productos
                                             </a>
                                         </div>
                                     </div>
