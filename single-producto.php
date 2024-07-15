@@ -37,8 +37,29 @@
                                             <?php edit_post_link(); ?>
                                             <h2>Presentación</h2>
                                             <ul class="list-inline">
-                                                <li class="list-inline-item">- 8 pz</li>
-                                                <li class="list-inline-item">- 12 px</li>
+                                                <?php if (
+                                                    have_rows("presentacion")
+                                                ):
+                                                    while (
+                                                        have_rows(
+                                                            "presentacion"
+                                                        )
+                                                    ):
+                                                        the_row(); ?>
+                                                    <?php if (
+                                                        get_sub_field("porcion")
+                                                    ): ?>
+                                                        <li class="list-inline-item">- <?php the_sub_field(
+                                                            "piezas"
+                                                        ); ?></li>
+                                                    <?php endif; ?>
+                                                <?php
+                                                    endwhile; ?>
+                                                <?php
+                                                else:
+                                                     ?>
+                                                <?php
+                                                endif; ?>
                                             </ul>
                                             <h2>Receta popular</h2>
                                             <div class="card">
