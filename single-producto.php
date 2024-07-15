@@ -47,7 +47,7 @@
                                                     ):
                                                         the_row(); ?>
                                                     <?php if (
-                                                        get_sub_field("porcion")
+                                                        get_sub_field("piezas")
                                                     ): ?>
                                                         <li class="list-inline-item">- <?php the_sub_field(
                                                             "piezas"
