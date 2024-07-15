@@ -1,186 +1,186 @@
 <?php get_header(); ?>
 
-        <section id="jumbotron" style="background: url('<?php echo esc_url(
-            get_the_post_thumbnail_url(get_the_ID(), "full")
-        ); ?>') no-repeat; background-size: cover; background-position: center;">
-            <div class="overlay"></div>
-            <div class="container">
-                <div class="row">
-                    <div class="col">
-                        <h1>
-                            <strong><?php the_title(); ?></strong><br>
-                            con productos <strong>Ponderosa</strong>
-                        </h1>
-                    </div>
+    <section id="jumbotron" style="background: url('<?php echo esc_url(
+        get_the_post_thumbnail_url(get_the_ID(), "full")
+    ); ?>') no-repeat; background-size: cover; background-position: center;">
+        <div class="overlay"></div>
+        <div class="container">
+            <div class="row">
+                <div class="col">
+                    <h1>
+                        <strong><?php the_title(); ?></strong><br>
+                        con productos <strong>Ponderosa</strong>
+                    </h1>
                 </div>
             </div>
-        </section>
+        </div>
+    </section>
 
-        <section id="receta" class="section-bg-sandwich pt-60 pb-0" style="background: url('<?php echo esc_url(
-            get_the_post_thumbnail_url(get_the_ID(), "full")
-        ); ?>') no-repeat; background-size: cover; background-position: center;">
-            <div class="overlay"></div>
-            <div class="container">
-                <div class="row mb-5 text-center">
-                    <div class="col">
-                        <h1><?php the_title(); ?></h1>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col">
-                        <div class="contenedor-receta">
-                            <div class="row">
-                                <div class="col-lg-6 p-5 pb-0 pb-lg-5 border-lg-end">
-                                    <?php
-                                    // Get the values of the custom fields 'ingredientes' and 'instrucciones'
-                                    $ingredientes = get_field("ingredientes");
-
-                                    // Print the custom fields if they have values
-                                    if ($ingredientes):
-                                        echo "<h2>Ingredientes:</h2>";
-                                        echo $ingredientes;
-                                    endif;
-                                    ?>
-                                </div>
-                                <div class="col-lg-6 p-5">
-                                    <?php
-                                    // Get the values of the custom fields 'ingredientes' and 'instrucciones'
-                                    $instrucciones = get_field("instrucciones");
-
-                                    // Print the custom fields if they have values
-                                    if ($instrucciones):
-                                        echo "<h2>Instrucciones:</h2>";
-                                        echo $instrucciones;
-                                    endif;
-                                    ?>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+    <section id="receta" class="section-bg-sandwich pt-60 pb-0" style="background: url('<?php echo esc_url(
+        get_the_post_thumbnail_url(get_the_ID(), "full")
+    ); ?>') no-repeat; background-size: cover; background-position: center;">
+        <div class="overlay"></div>
+        <div class="container">
+            <div class="row mb-5 text-center">
+                <div class="col">
+                    <h1><?php the_title(); ?></h1>
                 </div>
             </div>
-        </section>
-
-        <section class="before-consejos"></section>
-
-        <section  class="recetas-generico section-gray py-60">
-            <div class="overlay"></div>
-            <div class="container-fluid">
-                <div class="row mb-5">
-                    <div class="col-lg-10 offset-lg-1 text-center">
-                        <h1>Conoce más recetas</h1>
-                    </div>
-                </div>
-                <div class="row">
-                    <?php
-                    $loopRecetas = locate_template("includes/loop-recetas.php");
-                    if ($loopRecetas) {
-                        load_template($loopRecetas, true);
-                    }
-                    ?>
-                </div>
-                <div class="row">
-                    <div class="col text-center">
-                        <a href="#" class="btn btn-primary">Ver más <i class="fa-solid fa-arrow-right"></i></a>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <section class="after-consejos"></section>
-
-        <section class="before-consejos"></section>
-
-        <section id="consejos" class="section-white">
-            <div class="container">
-                <div class="row mb-5">
-                    <div class="col-lg-10 offset-lg-1 text-center">
-                        <h1>Consejos Útiles</h1>
-                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptates ea voluptatum error eius, hic ullam optio impedit reiciendis doloremque nihil molestias eligendi ratione sint harum architecto culpa veniam cum accusantium!</p>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col">
-                        <!-- Swiper -->
-                        <div class="swiper swiper-consejos">
-                            <div class="swiper-pagination"></div>
-                            <div class="swiper-wrapper">
+            <div class="row">
+                <div class="col">
+                    <div class="contenedor-receta">
+                        <div class="row">
+                            <div class="col-lg-6 p-5 pb-0 pb-lg-5 border-lg-end">
                                 <?php
-                                $current_post_id = get_the_ID(); // Get the ID of the current post
+                                // Get the values of the custom fields 'ingredientes' and 'instrucciones'
+                                $ingredientes = get_field("ingredientes");
 
-                                $args = [
-                                    "post_type" => "consejo", // Custom post type
-                                    "posts_per_page" => -1, // Number of posts to display
-                                    "orderby" => "date", // Order by date
-                                    "order" => "DESC", // Latest posts first
-                                    "post__not_in" => [$current_post_id], // Exclude the current post
-                                ];
-
-                                $receta_query = new WP_Query($args);
-
-                                if ($receta_query->have_posts()):
-                                    while ($receta_query->have_posts()):
-                                        $receta_query->the_post(); ?>
-                                        <div class="swiper-slide">
-                                            <div class="card">
-                                                <a href="<?php the_permalink(); ?>" class="thumb-link">
-                                                    <?php the_post_thumbnail(
-                                                        "thumb-square",
-                                                        [
-                                                            "class" =>
-                                                                "card-img-top img-fluid",
-                                                        ]
-                                                    ); ?>
-                                                </a>
-                                                <div class="card-body">
-                                                    <h1 class="card-title"><?php the_title(); ?></h1>
-                                                    <a href="<?php the_permalink(); ?>" class="btn-ver">
-                                                        Ver <i class="fa-solid fa-arrow-right"></i>
-                                                    </a>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    <?php
-                                    endwhile;
-                                    wp_reset_postdata();
-                                else:
-                                     ?>
-                                    <p>No se encontraron consejos.</p>
-                                <?php
+                                // Print the custom fields if they have values
+                                if ($ingredientes):
+                                    echo "<h2>Ingredientes:</h2>";
+                                    echo $ingredientes;
                                 endif;
                                 ?>
                             </div>
-                            <div class="swiper-button-next"></div>
-                            <div class="swiper-button-prev"></div>
+                            <div class="col-lg-6 p-5">
+                                <?php
+                                // Get the values of the custom fields 'ingredientes' and 'instrucciones'
+                                $instrucciones = get_field("instrucciones");
+
+                                // Print the custom fields if they have values
+                                if ($instrucciones):
+                                    echo "<h2>Instrucciones:</h2>";
+                                    echo $instrucciones;
+                                endif;
+                                ?>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
-        </section>
+        </div>
+    </section>
 
-        <section class="after-consejos"></section>
+    <section class="before-consejos"></section>
 
-        <section id="productos" class="section-bg-salchichas py-60">
-            <div class="overlay"></div>
-            <div class="container">
-                <div class="row mb-5">
-                    <div class="col">
-                        <h1>Productos</h1>
-                    </div>
+    <section  class="recetas-generico section-gray py-60">
+        <div class="overlay"></div>
+        <div class="container-fluid">
+            <div class="row mb-5">
+                <div class="col-lg-10 offset-lg-1 text-center">
+                    <h1>Conoce más recetas</h1>
                 </div>
-                <div class="row">
-                    <div class="col">
-                        <?php
-                        $swiperProductos = locate_template(
-                            "includes/swiper-productos.php"
-                        );
-                        if ($swiperProductos) {
-                            load_template($swiperProductos, true);
-                        }
-                        ?>
+            </div>
+            <div class="row">
+                <?php
+                $loopRecetas = locate_template("includes/loop-recetas.php");
+                if ($loopRecetas) {
+                    load_template($loopRecetas, true);
+                }
+                ?>
+            </div>
+            <div class="row">
+                <div class="col text-center">
+                    <a href="#" class="btn btn-primary">Ver más <i class="fa-solid fa-arrow-right"></i></a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="after-consejos"></section>
+
+    <section class="before-consejos"></section>
+
+    <section id="consejos" class="section-white">
+        <div class="container">
+            <div class="row mb-5">
+                <div class="col-lg-10 offset-lg-1 text-center">
+                    <h1>Consejos Útiles</h1>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptates ea voluptatum error eius, hic ullam optio impedit reiciendis doloremque nihil molestias eligendi ratione sint harum architecto culpa veniam cum accusantium!</p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col">
+                    <!-- Swiper -->
+                    <div class="swiper swiper-consejos">
+                        <div class="swiper-pagination"></div>
+                        <div class="swiper-wrapper">
+                            <?php
+                            $current_post_id = get_the_ID(); // Get the ID of the current post
+
+                            $args = [
+                                "post_type" => "consejo", // Custom post type
+                                "posts_per_page" => -1, // Number of posts to display
+                                "orderby" => "date", // Order by date
+                                "order" => "DESC", // Latest posts first
+                                "post__not_in" => [$current_post_id], // Exclude the current post
+                            ];
+
+                            $receta_query = new WP_Query($args);
+
+                            if ($receta_query->have_posts()):
+                                while ($receta_query->have_posts()):
+                                    $receta_query->the_post(); ?>
+                                    <div class="swiper-slide">
+                                        <div class="card">
+                                            <a href="<?php the_permalink(); ?>" class="thumb-link">
+                                                <?php the_post_thumbnail(
+                                                    "thumb-square",
+                                                    [
+                                                        "class" =>
+                                                            "card-img-top img-fluid",
+                                                    ]
+                                                ); ?>
+                                            </a>
+                                            <div class="card-body">
+                                                <h1 class="card-title"><?php the_title(); ?></h1>
+                                                <a href="<?php the_permalink(); ?>" class="btn-ver">
+                                                    Ver <i class="fa-solid fa-arrow-right"></i>
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                <?php
+                                endwhile;
+                                wp_reset_postdata();
+                            else:
+                                 ?>
+                                <p>No se encontraron consejos.</p>
+                            <?php
+                            endif;
+                            ?>
+                        </div>
+                        <div class="swiper-button-next"></div>
+                        <div class="swiper-button-prev"></div>
                     </div>
                 </div>
             </div>
-        </section>
+        </div>
+    </section>
+
+    <section class="after-consejos"></section>
+
+    <section id="productos" class="section-bg-salchichas py-60">
+        <div class="overlay"></div>
+        <div class="container">
+            <div class="row mb-5">
+                <div class="col">
+                    <h1>Productos</h1>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col">
+                    <?php
+                    $swiperProductos = locate_template(
+                        "includes/swiper-productos.php"
+                    );
+                    if ($swiperProductos) {
+                        load_template($swiperProductos, true);
+                    }
+                    ?>
+                </div>
+            </div>
+        </div>
+    </section>
 
 <?php get_footer(); ?>
