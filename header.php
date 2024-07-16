@@ -146,11 +146,12 @@
                             <ul class="list-inline">
                                 <li list-inline-item">
                                     <a
-                                        <?php if (!is_home()): ?>
-                                            href="<?php echo site_url(); ?>#productos"
-                                        <?php else: ?>
-                                            class="anchor"
-                                        <?php endif; ?>
+                                        href="<?php echo is_home()
+                                            ? "#productos"
+                                            : site_url() . "#productos"; ?>"
+                                        <?php if (
+                                            is_home()
+                                        ): ?>class="anchor"<?php endif; ?>
                                     >Productos</a>
                                 </li>
                                 <li class="list-inline-item">
