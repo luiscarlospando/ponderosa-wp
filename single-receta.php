@@ -61,8 +61,6 @@
         </div>
     </section>
 
-    <section class="before-consejos"></section>
-
     <section  class="recetas-generico section-gray py-60">
         <div class="overlay"></div>
         <div class="container-fluid">
@@ -87,10 +85,6 @@
         </div>
     </section>
 
-    <section class="after-consejos"></section>
-
-    <section class="before-consejos"></section>
-
     <section id="consejos" class="section-white">
         <div class="container">
             <div class="row mb-5">
@@ -113,8 +107,6 @@
             </div>
         </div>
     </section>
-
-    <section class="after-consejos"></section>
 
     <section id="productos" class="section-bg-salchichas py-60">
         <div class="overlay"></div>
