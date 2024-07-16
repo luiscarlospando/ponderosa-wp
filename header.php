@@ -195,7 +195,7 @@
  endif; ?>#consejos">Consejos Prácticos</a>
                                 </li>
                                 <li class="list-inline-item">
-                                    <a class="anchor" href="#contacto">Contacto</a>
+                                    <a class="anchor" href="#contacto">Contactos</a>
                                 </li>
                                 <li class="list-inline-item">
                                     <ul class="list-inline">
