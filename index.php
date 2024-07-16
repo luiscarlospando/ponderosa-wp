@@ -509,131 +509,14 @@
             </div>
             <div class="row">
                 <div class="col">
-                    <!-- Swiper -->
-                    <div class="swiper swiper-consejos">
-                        <div class="swiper-pagination"></div>
-                        <div class="swiper-wrapper">
-                            <div class="swiper-slide">
-                                <div class="card">
-                                    <img src="<?php echo esc_url(
-                                        get_template_directory_uri()
-                                    ); ?>/assets/images/thumb-square.png" class="card-img-top img-fluid" alt="">
-                                    <div class="card-body">
-                                        <h1 class="card-title">Cómo hacer el mejor queso fundido regio</h1>
-                                        <a href="#" class="btn-ver">
-                                            Ver <i class="fa-solid fa-arrow-right"></i>
-                                        </a>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="swiper-slide">
-                                <div class="card">
-                                    <img src="<?php echo esc_url(
-                                        get_template_directory_uri()
-                                    ); ?>/assets/images/thumb-square.png" class="card-img-top img-fluid" alt="">
-                                    <div class="card-body">
-                                        <h1 class="card-title">Cómo hacer el mejor queso fundido regio</h1>
-                                        <a href="#" class="btn-ver">
-                                            Ver <i class="fa-solid fa-arrow-right"></i>
-                                        </a>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="swiper-slide">
-                                <div class="card">
-                                    <img src="<?php echo esc_url(
-                                        get_template_directory_uri()
-                                    ); ?>/assets/images/thumb-square.png" class="card-img-top img-fluid" alt="">
-                                    <div class="card-body">
-                                        <h1 class="card-title">Cómo hacer el mejor queso fundido regio</h1>
-                                        <a href="#" class="btn-ver">
-                                            Ver <i class="fa-solid fa-arrow-right"></i>
-                                        </a>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="swiper-slide">
-                                <div class="card">
-                                    <img src="<?php echo esc_url(
-                                        get_template_directory_uri()
-                                    ); ?>/assets/images/thumb-square.png" class="card-img-top img-fluid" alt="">
-                                    <div class="card-body">
-                                        <h1 class="card-title">Cómo hacer el mejor queso fundido regio</h1>
-                                        <a href="#" class="btn-ver">
-                                            Ver <i class="fa-solid fa-arrow-right"></i>
-                                        </a>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="swiper-slide">
-                                <div class="card">
-                                    <img src="<?php echo esc_url(
-                                        get_template_directory_uri()
-                                    ); ?>/assets/images/thumb-square.png" class="card-img-top img-fluid" alt="">
-                                    <div class="card-body">
-                                        <h1 class="card-title">Cómo hacer el mejor queso fundido regio</h1>
-                                        <a href="#" class="btn-ver">
-                                            Ver <i class="fa-solid fa-arrow-right"></i>
-                                        </a>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="swiper-slide">
-                                <div class="card">
-                                    <img src="<?php echo esc_url(
-                                        get_template_directory_uri()
-                                    ); ?>/assets/images/thumb-square.png" class="card-img-top img-fluid" alt="">
-                                    <div class="card-body">
-                                        <h1 class="card-title">Cómo hacer el mejor queso fundido regio</h1>
-                                        <a href="#" class="btn-ver">
-                                            Ver <i class="fa-solid fa-arrow-right"></i>
-                                        </a>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="swiper-slide">
-                                <div class="card">
-                                    <img src="<?php echo esc_url(
-                                        get_template_directory_uri()
-                                    ); ?>/assets/images/thumb-square.png" class="card-img-top img-fluid" alt="">
-                                    <div class="card-body">
-                                        <h1 class="card-title">Cómo hacer el mejor queso fundido regio</h1>
-                                        <a href="#" class="btn-ver">
-                                            Ver <i class="fa-solid fa-arrow-right"></i>
-                                        </a>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="swiper-slide">
-                                <div class="card">
-                                    <img src="<?php echo esc_url(
-                                        get_template_directory_uri()
-                                    ); ?>/assets/images/thumb-square.png" class="card-img-top img-fluid" alt="">
-                                    <div class="card-body">
-                                        <h1 class="card-title">Cómo hacer el mejor queso fundido regio</h1>
-                                        <a href="#" class="btn-ver">
-                                            Ver <i class="fa-solid fa-arrow-right"></i>
-                                        </a>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="swiper-slide">
-                                <div class="card">
-                                    <img src="<?php echo esc_url(
-                                        get_template_directory_uri()
-                                    ); ?>/assets/images/thumb-square.png" class="card-img-top img-fluid" alt="">
-                                    <div class="card-body">
-                                        <h1 class="card-title">Cómo hacer el mejor queso fundido regio</h1>
-                                        <a href="#" class="btn-ver">
-                                            Ver <i class="fa-solid fa-arrow-right"></i>
-                                        </a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="swiper-button-next"></div>
-                        <div class="swiper-button-prev"></div>
-                    </div>
+                    <?php
+                    $swiperConsejos = locate_template(
+                        "includes/swiper-consejos.php"
+                    );
+                    if ($swiperConsejos) {
+                        load_template($swiperConsejos, true);
+                    }
+                    ?>
                 </div>
             </div>
         </div>
