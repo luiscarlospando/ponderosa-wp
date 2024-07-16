@@ -10,7 +10,7 @@
     <section id="consejos" class="section-white">
         <div class="container">
             <div class="row mb-5">
-                <div class="col-lg-10 offset-lg-1 text-center">
+                <div class="col-lg-10 offset-lg-1">
                     <h1><?php the_title(); ?></h1>
                     <?php the_content(); ?>
                 </div>
