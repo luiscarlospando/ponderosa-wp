@@ -37,7 +37,7 @@
                                         <div class="card-body">
                                             <h1 class="card-title"><?php the_title(); ?></h1 >
                                             <a href="<?php the_permalink(); ?>" class="btn btn-primary">
-                                                Ver productos
+                                                Ver producto
                                             </a>
                                         </div>
                                     </div>
