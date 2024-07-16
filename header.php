@@ -162,7 +162,7 @@
                                 <li list-inline-item">
                                     <a
                                         href="<?php echo is_home()
-                                            ? "#recetarui"
+                                            ? "#recetario"
                                             : site_url() . "#recetario"; ?>"
                                         <?php if (
                                             is_home()
