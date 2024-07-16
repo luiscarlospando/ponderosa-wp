@@ -10,7 +10,6 @@ $args = [
     "tax_query" => [
         [
             "taxonomy" => "recetas-de-temporada", // Custom taxonomy
-            "operator" => "EXISTS", // Check if any term in this taxonomy exists
         ],
     ],
 ];
