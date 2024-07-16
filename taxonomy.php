@@ -1,5 +1,12 @@
 <?php get_header(); ?>
 
+    <?php
+    $jumbotron = locate_template("includes/jumbotron.php");
+    if ($jumbotron) {
+        load_template($jumbotron, true);
+    }
+    ?>
+
     <section id="productos" class="section-gray py-60">
         <div class="container">
             <div class="row mb-5">
