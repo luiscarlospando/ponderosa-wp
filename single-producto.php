@@ -262,8 +262,6 @@
         </div>
     </section>
 
-    <section id="before-recetario"></section>
-
     <section id="recetario" class="section-red curved-div-inward">
         <div class="container">
             <div class="row mb-5">
@@ -289,7 +287,5 @@
             </div>
         </div>
     </section>
-
-    <section id="after-recetario"></section>
 
 <?php get_footer(); ?>
