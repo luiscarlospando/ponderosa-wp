@@ -7,34 +7,6 @@
     }
     ?>
 
-    <!-- section class="before-consejos"></section -->
-
-    <section  class="recetas-generico section-white py-60">
-        <div class="overlay"></div>
-        <div class="container-fluid">
-            <div class="row mb-5">
-                <div class="col-lg-10 offset-lg-1 text-center">
-                    <h1>Conoce más recetas</h1>
-                </div>
-            </div>
-            <div class="row">
-                <?php
-                $loopRecetas = locate_template("includes/loop-recetas.php");
-                if ($loopRecetas) {
-                    load_template($loopRecetas, true);
-                }
-                ?>
-            </div>
-            <div class="row">
-                <div class="col text-center">
-                    <a href="#" class="btn btn-primary">Ver más <i class="fa-solid fa-arrow-right"></i></a>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- section class="after-consejos"></section -->
-
     <section id="productos" class="section-gray py-60">
         <div class="container">
             <div class="row mb-5">
