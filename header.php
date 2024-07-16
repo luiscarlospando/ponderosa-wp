@@ -150,7 +150,7 @@
                                     ): ?>anchor<?php endif; ?> href="<?php if (
      !is_home()
  ):
-     echo esc_url(home_url());
+     echo site_url();
  endif; ?>#productos">Productos</a>
                                 </li>
                                 <li class="list-inline-item">
@@ -195,7 +195,7 @@
  endif; ?>#consejos">Consejos Prácticos</a>
                                 </li>
                                 <li class="list-inline-item">
-                                    <a class="anchor" href="#contacto">Contactos</a>
+                                    <a class="anchor" href="#contacto">Contacto</a>
                                 </li>
                                 <li class="list-inline-item">
                                     <ul class="list-inline">
