@@ -244,7 +244,7 @@
         <div class="container">
             <div class="row mb-5">
                 <div class="col">
-                    <h1>Productos</h1>
+                    <h1>Productos Relacionados</h1>
                 </div>
             </div>
             <div class="row">
