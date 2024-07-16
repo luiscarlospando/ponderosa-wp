@@ -80,7 +80,7 @@
             <div class="row">
                 <div class="col text-center">
                     <a href="<?php echo esc_url(
-                        get_permalink(2)
+                        get_permalink(35)
                     ); ?>" class="btn btn-primary">Ver más <i class="fa-solid fa-arrow-right"></i></a>
                 </div>
             </div>
