@@ -3,7 +3,7 @@ $current_post_id = get_the_ID(); // Get the ID of the current post
 
 $args = [
     "post_type" => "receta", // Custom post type
-    "posts_per_page" => 3, // Number of posts to display
+    "posts_per_page" => 4, // Number of posts to display
     "orderby" => "rand", // Random order
 ];
 
