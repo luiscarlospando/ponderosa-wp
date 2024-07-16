@@ -1,6 +1,8 @@
 <?php
 $current_post_id = get_the_ID(); // Get the ID of the current post
 
+$desired_terms = ["recetas-de-temporada"];
+
 $args = [
     "post_type" => "receta", // Custom post type
     "posts_per_page" => 3, // Number of posts to display
@@ -9,7 +11,10 @@ $args = [
     "post__not_in" => [$current_post_id], // Exclude the current post
     "tax_query" => [
         [
-            "taxonomy" => "recetas-de-temporada", // Custom taxonomy
+            "taxonomy" => "categoria-recetas", // Custom taxonomy
+            "field" => "slug", // You can also use 'term_id' or 'name'
+            "terms" => $desired_terms, // Array of term slugs, term IDs, or names
+            "operator" => "IN", // Possible values are 'IN', 'NOT IN', 'AND'
         ],
     ],
 ];
