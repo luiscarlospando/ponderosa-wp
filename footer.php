@@ -234,6 +234,17 @@
             </script>
         <?php endif; ?>
 
+        <?php if (is_singular("consejo")): ?>
+            <script>
+                document.addEventListener("DOMContentLoaded", function() {
+                    const anchor = document.getElementById("consejos");
+                    if (anchor) {
+                        anchor.scrollIntoView({ behavior: 'smooth' });
+                    }
+                });
+            </script>
+        <?php endif; ?>
+
         <?php if (is_tax()): ?>
             <script>
                 document.addEventListener("DOMContentLoaded", function() {
