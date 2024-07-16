@@ -19,9 +19,6 @@ if ($receta_query->have_posts()):
                         "class" => "card-img-left img-fluid",
                     ]); ?>
                 </a>
-                <img src="<?php echo esc_url(
-                    get_template_directory_uri()
-                ); ?>/assets/images/thumb-receta.png" class="card-img-left img-fluid" alt="">
                 <div class="card-body">
                     <a href="<?php the_permalink(); ?>">
                         <h1 class="card-title"><?php the_title(); ?></h1>
