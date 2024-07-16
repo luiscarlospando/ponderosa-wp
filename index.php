@@ -297,7 +297,9 @@
                 </div>
                 <div class="col-lg-6">
                     <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sint dolor aut corporis aspernatur delectus at odio explicabo cupiditate, doloribus aliquid? Quos debitis at autem amet quam, temporibus id cumque quia.</p>
-                    <a href="#" class="btn">Conoce la historia completa <i class="fa-solid fa-arrow-right"></i></a>
+                    <a href="<?php echo esc_url(
+                        get_permalink(2)
+                    ); ?>" class="btn">Conoce la historia completa <i class="fa-solid fa-arrow-right"></i></a>
                 </div>
             </div>
         </div>
