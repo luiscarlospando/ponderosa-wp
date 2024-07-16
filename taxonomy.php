@@ -41,6 +41,11 @@
                 <?php
                 endif; ?>
             </div>
+            <div class="row">
+                <div class="col text-center">
+                    <?php echo bootstrap_pagination(); ?>
+                </div>
+            </div>
         </div>
     </section>
 
