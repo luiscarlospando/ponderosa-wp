@@ -205,47 +205,6 @@
         </div>
     </section>
 
-    <section id="receta" class="section-bg-sandwich pt-60 pb-0">
-        <div class="overlay"></div>
-        <div class="container">
-            <div class="row mb-5 text-center">
-                <div class="col">
-                    <h1>Sándwich casero</h1>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col">
-                    <div class="contenedor-receta">
-                        <div class="row">
-                            <div class="col-lg-6 p-5 pb-0 pb-lg-5 border-lg-end">
-                                <h2>Ingredientes:</h2>
-                                <ul>
-                                    <li>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nobis, ratione. Ea delectus sed adipisci illo cumque neque temporibus doloribus qui! Aspernatur, minus veritatis. Ratione, placeat vel est laboriosam possimus animi!</li>
-                                    <li>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nobis, ratione. Ea delectus sed adipisci illo cumque neque temporibus doloribus qui! Aspernatur, minus veritatis. Ratione, placeat vel est laboriosam possimus animi!</li>
-                                    <li>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nobis, ratione. Ea delectus sed adipisci illo cumque neque temporibus doloribus qui! Aspernatur, minus veritatis. Ratione, placeat vel est laboriosam possimus animi!</li>
-                                    <li>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nobis, ratione. Ea delectus sed adipisci illo cumque neque temporibus doloribus qui! Aspernatur, minus veritatis. Ratione, placeat vel est laboriosam possimus animi!</li>
-                                    <li>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nobis, ratione. Ea delectus sed adipisci illo cumque neque temporibus doloribus qui! Aspernatur, minus veritatis. Ratione, placeat vel est laboriosam possimus animi!</li>
-                                    <li>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nobis, ratione. Ea delectus sed adipisci illo cumque neque temporibus doloribus qui! Aspernatur, minus veritatis. Ratione, placeat vel est laboriosam possimus animi!</li>
-                                </ul>
-                            </div>
-                            <div class="col-lg-6 p-5">
-                                <h2>Intrucciones:</h2>
-                                <ol>
-                                    <li>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nobis, ratione. Ea delectus sed adipisci illo cumque neque temporibus doloribus qui! Aspernatur, minus veritatis. Ratione, placeat vel est laboriosam possimus animi!</li>
-                                    <li>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nobis, ratione. Ea delectus sed adipisci illo cumque neque temporibus doloribus qui! Aspernatur, minus veritatis. Ratione, placeat vel est laboriosam possimus animi!</li>
-                                    <li>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nobis, ratione. Ea delectus sed adipisci illo cumque neque temporibus doloribus qui! Aspernatur, minus veritatis. Ratione, placeat vel est laboriosam possimus animi!</li>
-                                    <li>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nobis, ratione. Ea delectus sed adipisci illo cumque neque temporibus doloribus qui! Aspernatur, minus veritatis. Ratione, placeat vel est laboriosam possimus animi!</li>
-                                    <li>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nobis, ratione. Ea delectus sed adipisci illo cumque neque temporibus doloribus qui! Aspernatur, minus veritatis. Ratione, placeat vel est laboriosam possimus animi!</li>
-                                    <li>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nobis, ratione. Ea delectus sed adipisci illo cumque neque temporibus doloribus qui! Aspernatur, minus veritatis. Ratione, placeat vel est laboriosam possimus animi!</li>
-                                </ol>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
     <section class="before-consejos"></section>
 
     <section  class="recetas-generico section-white py-60">
