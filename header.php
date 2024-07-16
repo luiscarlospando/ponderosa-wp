@@ -76,13 +76,9 @@
                             >
                         </li>
                         <li>
-                            <a <?php if (
-                                is_home()
-                            ): ?>class="anchor"<?php endif; ?> id="btn-nav-3" href="<?php if (
-     !is_home()
- ):
-     echo esc_url(home_url());
- endif; ?>#recetario"
+                            <a id="btn-nav-3" href="<?php echo esc_url(
+                                get_permalink(35)
+                            ); ?>"
                                 >Recetas</a
                             >
                         </li>
@@ -160,14 +156,9 @@
                                     ); ?>">Nuestra Historia</a>
                                 </li>
                                 <li list-inline-item">
-                                    <a
-                                        href="<?php echo is_home()
-                                            ? "#recetario"
-                                            : site_url() . "#recetario"; ?>"
-                                        <?php if (
-                                            is_home()
-                                        ): ?>class="anchor"<?php endif; ?>
-                                    >Recetas</a>
+                                    <a href="<?php echo esc_url(
+                                        get_permalink(35)
+                                    ); ?>">Recetas</a>
                                 </li>
                             </ul>
                         </nav>
