@@ -147,8 +147,6 @@ get_header(); ?>
         </div>
     </section>
 
-    <section id="before-recetario"></section>
-
     <section id="recetario" class="section-red curved-div-inward">
         <div class="container">
             <div class="row mb-5">
@@ -214,10 +212,6 @@ get_header(); ?>
             </div>
         </div>
     </section>
-
-    <section id="after-recetario"></section>
-
-    <section class="before-consejos"></section>
 
     <section id="consejos" class="section-white">
         <div class="container">
