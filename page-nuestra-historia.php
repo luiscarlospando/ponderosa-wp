@@ -156,54 +156,14 @@ get_header(); ?>
                 </div>
             </div>
             <div class="row">
-                <div class="col-lg-6 mb-4">
-                    <div class="card">
-                        <img src="<?php echo esc_url(
-                            get_template_directory_uri()
-                        ); ?>/assets/images/thumb-receta.png" class="card-img-left img-fluid" alt="">
-                        <div class="card-body">
-                            <h1 class="card-title">Lorem ipsum dolor sit amet consectetur adipisicing elit</h1>
-                            <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi ut magnam perferendis mollitia dolores odit distinctio ea a corporis? Fuga accusantium eius ad? Ipsa non doloremque quas provident, eum error!</p>
-                            <a href="#" class="btn btn-primary">Ver receta <i class="fa-solid fa-arrow-right"></i></a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-6 mb-4">
-                    <div class="card">
-                        <img src="<?php echo esc_url(
-                            get_template_directory_uri()
-                        ); ?>/assets/images/thumb-receta.png" class="card-img-left img-fluid" alt="">
-                        <div class="card-body">
-                            <h1 class="card-title">Lorem ipsum dolor sit amet consectetur adipisicing elit</h1>
-                            <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi ut magnam perferendis mollitia dolores odit distinctio ea a corporis? Fuga accusantium eius ad? Ipsa non doloremque quas provident, eum error!</p>
-                            <a href="#" class="btn btn-primary">Ver receta <i class="fa-solid fa-arrow-right"></i></a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-6 mb-4">
-                    <div class="card">
-                        <img src="<?php echo esc_url(
-                            get_template_directory_uri()
-                        ); ?>/assets/images/thumb-receta.png" class="card-img-left img-fluid" alt="">
-                        <div class="card-body">
-                            <h1 class="card-title">Lorem ipsum dolor sit amet consectetur adipisicing elit</h1>
-                            <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi ut magnam perferendis mollitia dolores odit distinctio ea a corporis? Fuga accusantium eius ad? Ipsa non doloremque quas provident, eum error!</p>
-                            <a href="#" class="btn btn-primary">Ver receta <i class="fa-solid fa-arrow-right"></i></a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-6 mb-4">
-                    <div class="card">
-                        <img src="<?php echo esc_url(
-                            get_template_directory_uri()
-                        ); ?>/assets/images/thumb-receta.png" class="card-img-left img-fluid" alt="">
-                        <div class="card-body">
-                            <h1 class="card-title">Lorem ipsum dolor sit amet consectetur adipisicing elit</h1>
-                            <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi ut magnam perferendis mollitia dolores odit distinctio ea a corporis? Fuga accusantium eius ad? Ipsa non doloremque quas provident, eum error!</p>
-                            <a href="#" class="btn btn-primary">Ver receta <i class="fa-solid fa-arrow-right"></i></a>
-                        </div>
-                    </div>
-                </div>
+                <?php
+                $loopRecetarioPonderosa = locate_template(
+                    "includes/loop-recetario-ponderosa.php"
+                );
+                if ($loopRecetarioPonderosa) {
+                    load_template($loopRecetarioPonderosa, true);
+                }
+                ?>
             </div>
             <div class="row">
                 <div class="col text-center">
