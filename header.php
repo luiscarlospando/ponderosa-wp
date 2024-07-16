@@ -145,13 +145,13 @@
                         <nav>
                             <ul class="list-inline">
                                 <li list-inline-item">
-                                    <a class="<?php if (
-                                        is_home()
-                                    ): ?>anchor<?php endif; ?> href="<?php if (
-     !is_home()
- ):
-     echo site_url();
- endif; ?>#productos">Productos</a>
+                                    <a
+                                        <?php if (!is_home()): ?>
+                                            href="<?php echo site_url(); ?>#productos"
+                                        <?php else: ?>
+                                            class="anchor"
+                                        <?php endif; ?>
+                                    >Productos</a>
                                 </li>
                                 <li class="list-inline-item">
                                     <a href="<?php echo esc_url(
