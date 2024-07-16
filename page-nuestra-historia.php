@@ -5,6 +5,13 @@
 
 get_header(); ?>
 
+    <?php
+    $jumbotron = locate_template("includes/jumbotron.php");
+    if ($jumbotron) {
+        load_template($jumbotron, true);
+    }
+    ?>
+
     <section id="historia" class="section-bg-salchichas py-60">
         <div class="overlay"></div>
         <div class="container-fluid">
