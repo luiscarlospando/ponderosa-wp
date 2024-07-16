@@ -160,13 +160,14 @@
                                     ); ?>">Nuestra Historia</a>
                                 </li>
                                 <li list-inline-item">
-                                    <a class="<?php if (
-                                        is_home()
-                                    ): ?>anchor<?php endif; ?> href="<?php if (
-     !is_home()
- ):
-     echo esc_url(home_url());
- endif; ?>#recetario">Recetas</a>
+                                    <a
+                                        href="<?php echo is_home()
+                                            ? "#recetarui"
+                                            : site_url() . "#recetario"; ?>"
+                                        <?php if (
+                                            is_home()
+                                        ): ?>class="anchor"<?php endif; ?>
+                                    >Recetas</a>
                                 </li>
                             </ul>
                         </nav>
@@ -187,13 +188,14 @@
                         <nav>
                             <ul class="list-inline">
                                 <li list-inline-item">
-                                    <a class="<?php if (
-                                        is_home()
-                                    ): ?>anchor<?php endif; ?> href="<?php if (
-     !is_home()
- ):
-     echo esc_url(home_url());
- endif; ?>#consejos">Consejos Prácticos</a>
+                                    <a
+                                        href="<?php echo is_home()
+                                            ? "#consejos"
+                                            : site_url() . "#consejos"; ?>"
+                                        <?php if (
+                                            is_home()
+                                        ): ?>class="anchor"<?php endif; ?>
+                                    >Consejos Prácticos</a>
                                 </li>
                                 <li class="list-inline-item">
                                     <a class="anchor" href="#contacto">Contacto</a>
