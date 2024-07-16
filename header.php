@@ -144,24 +144,28 @@
                     <div class="d-none d-lg-block col-lg-5 my-auto text-center">
                         <nav>
                             <ul class="list-inline">
-                                <li class="<?php if (
-                                    is_home()
-                                ): ?>anchor<?php endif; ?> list-inline-item">
-                                    <a href="<?php if (!is_home()):
-                                        echo esc_url(home_url());
-                                    endif; ?>#productos">Productos</a>
+                                <li list-inline-item">
+                                    <a class="<?php if (
+                                        is_home()
+                                    ): ?>anchor<?php endif; ?> href="<?php if (
+     !is_home()
+ ):
+     echo esc_url(home_url());
+ endif; ?>#productos">Productos</a>
                                 </li>
                                 <li class="list-inline-item">
                                     <a href="<?php echo esc_url(
                                         get_permalink(2)
                                     ); ?>">Nuestra Historia</a>
                                 </li>
-                                <li class="<?php if (
-                                    is_home()
-                                ): ?>anchor<?php endif; ?> list-inline-item">
-                                    <a href="<?php if (!is_home()):
-                                        echo esc_url(home_url());
-                                    endif; ?>#recetario">Recetas</a>
+                                <li list-inline-item">
+                                    <a class="<?php if (
+                                        is_home()
+                                    ): ?>anchor<?php endif; ?> href="<?php if (
+     !is_home()
+ ):
+     echo esc_url(home_url());
+ endif; ?>#recetario">Recetas</a>
                                 </li>
                             </ul>
                         </nav>
@@ -181,15 +185,17 @@
                     <div class="col-lg-5 d-none d-lg-block my-auto text-center">
                         <nav>
                             <ul class="list-inline">
-                                <li class="<?php if (
-                                    is_home()
-                                ): ?>anchor<?php endif; ?> list-inline-item">
-                                    <a href="<?php if (!is_home()):
-                                        echo esc_url(home_url());
-                                    endif; ?>#consejos">Consejos Prácticos</a>
+                                <li list-inline-item">
+                                    <a class="<?php if (
+                                        is_home()
+                                    ): ?>anchor<?php endif; ?> href="<?php if (
+     !is_home()
+ ):
+     echo esc_url(home_url());
+ endif; ?>#consejos">Consejos Prácticos</a>
                                 </li>
-                                <li class="anchor list-inline-item">
-                                    <a href="#contacto">Contacto</a>
+                                <li class="list-inline-item">
+                                    <a class="anchor" href="#contacto">Contacto</a>
                                 </li>
                                 <li class="list-inline-item">
                                     <ul class="list-inline">

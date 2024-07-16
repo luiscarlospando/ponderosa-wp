@@ -58,7 +58,7 @@ eval("/* provided dependency */ var $ = __webpack_require__(/*! jquery */ \"./no
   \*********************************/
 /***/ ((__unused_webpack_module, __unused_webpack_exports, __webpack_require__) => {
 
-eval("/* provided dependency */ var $ = __webpack_require__(/*! jquery */ \"./node_modules/jquery/dist/jquery.js\");\n// Smooth scrolling\n$(\".anchor\").on(\"click\", function (event) {\n  event.preventDefault();\n  var Item = $(this).attr(\"href\");\n  console.log(Item);\n  $(\"body, html\").stop(true, true).animate({\n    scrollTop: $(Item).offset().top - 66\n  }, 1000);\n});\n\n//# sourceURL=webpack://ponderosa-wp/./src/smooth-scrolling.js?");
+eval("/* provided dependency */ var $ = __webpack_require__(/*! jquery */ \"./node_modules/jquery/dist/jquery.js\");\n// Smooth scrolling\n$(\".anchor\").on(\"click\", function (event) {\n  event.preventDefault();\n  var Item = $(this).attr(\"href\");\n  $(\"body, html\").stop(true, true).animate({\n    scrollTop: $(Item).offset().top - 66\n  }, 1000);\n});\n\n//# sourceURL=webpack://ponderosa-wp/./src/smooth-scrolling.js?");
 
 /***/ }),
 
