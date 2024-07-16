@@ -1,0 +1,44 @@
+<?php
+$current_post_id = get_the_ID(); // Get the ID of the current post
+
+$args = [
+    "post_type" => "receta", // Custom post type
+    "posts_per_page" => 3, // Number of posts to display
+    "orderby" => "rand", // Random order
+];
+
+$receta_query = new WP_Query($args);
+
+if ($receta_query->have_posts()):
+    while ($receta_query->have_posts()):
+        $receta_query->the_post(); ?>
+        <div class="col-lg-6 mb-4">
+            <div class="card">
+                <a href="<?php the_permalink(); ?>" class="thumb-link">
+                    <?php the_post_thumbnail("thumb-receta", [
+                        "class" => "card-img-left img-fluid",
+                    ]); ?>
+                </a>
+                <img src="<?php echo esc_url(
+                    get_template_directory_uri()
+                ); ?>/assets/images/thumb-receta.png" class="card-img-left img-fluid" alt="">
+                <div class="card-body">
+                    <a href="<?php the_permalink(); ?>">
+                        <h1 class="card-title"><?php the_title(); ?></h1>
+                    </a>
+                    <p class="card-text"><?php html5wp_excerpt(
+                        "html5wp_index"
+                    ); ?></p>
+                    <a href="<?php the_permalink(); ?>" class="btn btn-primary">Ver receta <i class="fa-solid fa-arrow-right"></i></a>
+                </div>
+            </div>
+        </div>
+    <?php
+    endwhile;
+    wp_reset_postdata();
+else:
+     ?>
+    <p>No se encontraron recetas.</p>
+<?php
+endif;
+?>

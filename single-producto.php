@@ -240,4 +240,56 @@
     <?php
     endif; ?>
 
+    <section id="productos" class="section-gray py-60">
+        <div class="container">
+            <div class="row mb-5">
+                <div class="col">
+                    <h1>Productos</h1>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col">
+                    <?php
+                    $swiperProductos = locate_template(
+                        "includes/swiper-productos.php"
+                    );
+                    if ($swiperProductos) {
+                        load_template($swiperProductos, true);
+                    }
+                    ?>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="before-recetario"></section>
+
+    <section id="recetario" class="section-red curved-div-inward">
+        <div class="container">
+            <div class="row mb-5">
+                <div class="col-lg-10 offset-lg-1 text-center">
+                    <h1>Recetario Ponderosa®</h1>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptates ea voluptatum error eius, hic ullam optio impedit reiciendis doloremque nihil molestias eligendi ratione sint harum architecto culpa veniam cum accusantium!</p>
+                </div>
+            </div>
+            <div class="row">
+                <?php
+                $loopRecetarioPonderosa = locate_template(
+                    "includes/loop-recetario-ponderosa.php"
+                );
+                if ($loopRecetarioPonderosa) {
+                    load_template($loopRecetarioPonderosa, true);
+                }
+                ?>
+            </div>
+            <div class="row">
+                <div class="col text-center">
+                    <a href="#" class="btn btn-primary">Ver más <i class="fa-solid fa-arrow-right"></i></a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="after-recetario"></section>
+
 <?php get_footer(); ?>
