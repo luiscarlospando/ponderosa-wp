@@ -79,7 +79,9 @@
             </div>
             <div class="row">
                 <div class="col text-center">
-                    <a href="#" class="btn btn-primary">Ver más <i class="fa-solid fa-arrow-right"></i></a>
+                    <a href="<?php echo esc_url(
+                        get_permalink(35)
+                    ); ?>" class="btn btn-primary">Ver más <i class="fa-solid fa-arrow-right"></i></a>
                 </div>
             </div>
         </div>
