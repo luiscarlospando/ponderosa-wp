@@ -7,7 +7,7 @@
     }
     ?>
 
-    <section class="before-consejos"></section>
+    <!-- section class="before-consejos"></section -->
 
     <section  class="recetas-generico section-white py-60">
         <div class="overlay"></div>
@@ -33,7 +33,7 @@
         </div>
     </section>
 
-    <section class="after-consejos"></section>
+    <!-- section class="after-consejos"></section -->
 
     <section id="productos" class="section-gray py-60">
         <div class="container">
@@ -57,7 +57,7 @@
         </div>
     </section>
 
-    <section id="before-recetario"></section>
+    <!-- section id="before-recetario"></section -->
 
     <section id="recetario" class="section-red curved-div-inward">
         <div class="container">
@@ -85,7 +85,7 @@
         </div>
     </section>
 
-    <section id="after-recetario"></section>
+    <!-- section id="after-recetario"></section -->
 
     <section id="nuestra-historia" class="py-60">
         <div class="overlay"></div>
@@ -107,7 +107,7 @@
         </div>
     </section>
 
-    <section class="before-consejos"></section>
+    <!-- section class="before-consejos"></section -->
 
     <section id="consejos" class="section-white">
         <div class="container">
