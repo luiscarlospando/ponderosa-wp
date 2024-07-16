@@ -1,7 +1,7 @@
 <?php
 $current_post_id = get_the_ID(); // Get the ID of the current post
 
-$desired_terms = ["recetas-de-temporada"];
+$desired_terms = ["recetas-pa-la-carnita-asada"];
 
 $args = [
     "post_type" => "receta", // Custom post type
