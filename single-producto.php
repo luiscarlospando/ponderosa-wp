@@ -83,13 +83,9 @@
                                                             $receta_popular->ID
                                                         )
                                                     ); ?>" class="thumb-link">
-                                                        <?php the_post_thumbnail(
-                                                            "thumb-receta",
-                                                            [
-                                                                "class" =>
-                                                                    "card-img-left img-fluid",
-                                                            ]
-                                                        ); ?>
+                                                        <img src="<?php echo esc_html(
+                                                            $receta_popular->post_image
+                                                        ); ?>" class="card-img-left img-fluid" alt="">
                                                     </a>
                                                     <div class="card-body">
                                                         <h1 class="card-title">
