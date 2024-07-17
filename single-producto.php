@@ -85,7 +85,7 @@
                                                     ); ?>" class="thumb-link">
                                                         <?php echo get_the_post_thumbnail(
                                                             $receta_popular->ID,
-                                                            "full",
+                                                            "thumb-receta",
                                                             [
                                                                 "class" =>
                                                                     "card-img-left img-fluid",
