@@ -78,9 +78,19 @@
                                             if ($receta_popular): ?>
                                                 <h2>Receta popular</h2>
                                                 <div class="card">
-                                                    <img src="<?php echo esc_url(
-                                                        get_template_directory_uri()
-                                                    ); ?>/assets/images/thumb-receta.png" class="card-img-left img-fluid" alt="">
+                                                    <a href="<?php echo esc_html(
+                                                        get_permalink(
+                                                            $receta_popular->ID
+                                                        )
+                                                    ); ?>" class="thumb-link">
+                                                        <?php the_post_thumbnail(
+                                                            "thumb-receta",
+                                                            [
+                                                                "class" =>
+                                                                    "card-img-left img-fluid",
+                                                            ]
+                                                        ); ?>
+                                                    </a>
                                                     <div class="card-body">
                                                         <h1 class="card-title">
                                                             <?php echo esc_html(
