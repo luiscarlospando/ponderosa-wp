@@ -35,7 +35,17 @@
                                             <h1><?php the_title(); ?></h1>
                                             <?php the_content(); ?>
                                             <?php edit_post_link(); ?>
-                                            <h2>Presentación</h2>
+                                            <?php if (
+                                                have_rows("presentacion")
+                                            ):
+                                                while (
+                                                    have_rows("presentacion")
+                                                ):
+                                                    the_row(); ?>
+                                                <h2>Presentación</h2>
+                                            <?php
+                                                endwhile;
+                                            endif; ?>
                                             <ul class="list-inline">
                                                 <?php if (
                                                     have_rows("presentacion")
@@ -61,12 +71,12 @@
                                                 <?php
                                                 endif; ?>
                                             </ul>
-                                            <h2>Receta popular</h2>
                                             <?php
                                             $receta_popular = get_field(
                                                 "receta_popular"
                                             );
                                             if ($receta_popular): ?>
+                                                <h2>Receta popular</h2>
                                                 <div class="card">
                                                     <img src="<?php echo esc_url(
                                                         get_template_directory_uri()
