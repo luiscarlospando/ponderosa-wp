@@ -1,45 +1,44 @@
 <?php get_header(); ?>
 
-	<main role="main" aria-label="Content">
-		<!-- section -->
-		<section>
+    <?php
+    $jumbotron = locate_template("includes/jumbotron.php");
+    if ($jumbotron) {
+        load_template($jumbotron, true);
+    }
+    ?>
 
-			<h1><?php the_title(); ?></h1>
+    <section class="section-white">
+        <div class="container">
+            <div class="row mb-5">
+                <div class="col-lg-10 offset-lg-1">
+                    <h1><?php the_title(); ?></h1>
+                    <?php the_content(); ?>
+                </div>
+            </div>
+        </div>
+    </section>
 
-		<?php if ( have_posts()) : while ( have_posts() ) : the_post(); ?>
-
-			<!-- article -->
-			<article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
-
-				<?php the_content(); ?>
-
-				<?php comments_template( '', true ); // Remove if you don't want comments. ?>
-
-				<br class="clear">
-
-				<?php edit_post_link(); ?>
-
-			</article>
-			<!-- /article -->
-
-		<?php endwhile; ?>
-
-		<?php else : ?>
-
-			<!-- article -->
-			<article>
-
-				<h2><?php esc_html_e( 'Sorry, nothing to display.', 'html5blank' ); ?></h2>
-
-			</article>
-			<!-- /article -->
-
-		<?php endif; ?>
-
-		</section>
-		<!-- /section -->
-	</main>
-
-<?php get_sidebar(); ?>
+    <section id="productos" class="section-bg-salchichas py-60">
+        <div class="overlay"></div>
+        <div class="container">
+            <div class="row mb-5">
+                <div class="col">
+                    <h1>Productos</h1>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col">
+                    <?php
+                    $swiperProductos = locate_template(
+                        "includes/swiper-productos.php"
+                    );
+                    if ($swiperProductos) {
+                        load_template($swiperProductos, true);
+                    }
+                    ?>
+                </div>
+            </div>
+        </div>
+    </section>
 
 <?php get_footer(); ?>
