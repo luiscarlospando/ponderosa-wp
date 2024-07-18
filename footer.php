@@ -10,7 +10,46 @@
                     <div class="col-lg-8">
                         <div class="row">
                             <div class="col-6 mb-4 mb-lg-0 col-lg-3 text-lg-center border-lg-end">
-                                <h1>Título 1</h1>
+                                <h1>Menú</h1>
+                                <nav>
+                                    <ul class="list-unstyled">
+                                        <li>
+                                            <a
+                                                href="<?php echo is_home()
+                                                    ? "#productos"
+                                                    : site_url() .
+                                                        "#productos"; ?>"
+                                                <?php if (
+                                                    is_home()
+                                                ): ?>class="anchor"<?php endif; ?>
+                                            >Productos</a>
+                                        </li>
+                                        <li>
+                                            <a href="<?php echo esc_url(
+                                                get_permalink(2)
+                                            ); ?>">Nuestra Historia</a>
+                                        </li>
+                                        <li>
+                                            <a href="<?php echo esc_url(
+                                                get_permalink(35)
+                                            ); ?>">Recetas</a>
+                                        </li>
+                                        <li>
+                                            <a
+                                                href="<?php echo is_home()
+                                                    ? "#consejos"
+                                                    : site_url() .
+                                                        "#consejos"; ?>"
+                                                <?php if (
+                                                    is_home()
+                                                ): ?>class="anchor"<?php endif; ?>
+                                            >Consejos Prácticos</a>
+                                        </li>
+                                    </ul>
+                                </nav>
+                            </div>
+                            <div class="col-6 mb-4 mb-lg-0 col-lg-3 text-lg-center border-lg-end">
+                                <h1>Productos</h1>
                                 <nav>
                                     <ul class="list-unstyled">
                                         <li>
@@ -47,7 +86,7 @@
                                 </nav>
                             </div>
                             <div class="col-6 mb-4 mb-lg-0 col-lg-3 text-lg-center border-lg-end">
-                                <h1>Título 1</h1>
+                                <h1>Recetas</h1>
                                 <nav>
                                     <ul class="list-unstyled">
                                         <li>
@@ -84,44 +123,7 @@
                                 </nav>
                             </div>
                             <div class="col-6 mb-4 mb-lg-0 col-lg-3 text-lg-center border-lg-end">
-                                <h1>Título 1</h1>
-                                <nav>
-                                    <ul class="list-unstyled">
-                                        <li>
-                                            <a href="#">
-                                                Elemento
-                                            </a>
-                                        </li>
-                                        <li>
-                                            <a href="#">
-                                                Elemento
-                                            </a>
-                                        </li>
-                                        <li>
-                                            <a href="#">
-                                                Elemento
-                                            </a>
-                                        </li>
-                                        <li>
-                                            <a href="#">
-                                                Elemento
-                                            </a>
-                                        </li>
-                                        <li>
-                                            <a href="#">
-                                                Elemento
-                                            </a>
-                                        </li>
-                                        <li>
-                                            <a href="#">
-                                                Elemento
-                                            </a>
-                                        </li>
-                                    </ul>
-                                </nav>
-                            </div>
-                            <div class="col-6 mb-4 mb-lg-0 col-lg-3 text-lg-center border-lg-end">
-                                <h1>Título 1</h1>
+                                <h1>Consejos</h1>
                                 <nav>
                                     <ul class="list-unstyled">
                                         <li>
