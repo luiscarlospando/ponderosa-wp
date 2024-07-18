@@ -52,36 +52,32 @@
                                 <h1>Productos</h1>
                                 <nav>
                                     <ul class="list-unstyled">
-                                        <li>
-                                            <a href="#">
-                                                Elemento
-                                            </a>
-                                        </li>
-                                        <li>
-                                            <a href="#">
-                                                Elemento
-                                            </a>
-                                        </li>
-                                        <li>
-                                            <a href="#">
-                                                Elemento
-                                            </a>
-                                        </li>
-                                        <li>
-                                            <a href="#">
-                                                Elemento
-                                            </a>
-                                        </li>
-                                        <li>
-                                            <a href="#">
-                                                Elemento
-                                            </a>
-                                        </li>
-                                        <li>
-                                            <a href="#">
-                                                Elemento
-                                            </a>
-                                        </li>
+                                        <?php
+                                        // Define the custom query
+                                        $args = [
+                                            "post_type" => "producto",
+                                            "posts_per_page" => 5,
+                                            "orderby" => "rand", // Order by random
+                                        ];
+
+                                        $query = new WP_Query($args);
+
+                                        if ($query->have_posts()):
+                                            while ($query->have_posts()):
+                                                $query->the_post(); ?>
+                                            <li>
+                                                <a href="<?php the_permalink(); ?>">
+                                                    <?php the_title(); ?>
+                                                </a>
+                                            </li>
+
+                                        <?php
+                                            endwhile;
+                                        else:
+                                        endif;
+                                        // Reset post data
+                                        wp_reset_postdata();
+                                        ?>
                                     </ul>
                                 </nav>
                             </div>
