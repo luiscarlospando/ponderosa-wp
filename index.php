@@ -88,7 +88,6 @@
             <div class="row mb-5">
                 <div class="col-lg-10 offset-lg-1 text-center">
                     <h1>Consejos Útiles</h1>
-                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptates ea voluptatum error eius, hic ullam optio impedit reiciendis doloremque nihil molestias eligendi ratione sint harum architecto culpa veniam cum accusantium!</p>
                 </div>
             </div>
             <div class="row">
