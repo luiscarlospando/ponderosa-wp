@@ -200,7 +200,7 @@
                                             <ul class="list-inline list-inline-nested">
                                                 <li class="list-inline-item">
                                                     <a
-                                                        href="https://"
+                                                        href="https://www.instagram.com/ponderosamx/"
                                                         alt="Instagram"
                                                         target="_blank"
                                                     >
@@ -211,7 +211,7 @@
                                                 </li>
                                                 <li class="list-inline-item">
                                                     <a
-                                                        href="https://"
+                                                        href="https://www.facebook.com/PONDEPONDEROSA?locale=es_LA"
                                                         alt="Facebook"
                                                         target="_blank"
                                                     >
@@ -220,7 +220,7 @@
                                                 </li>
                                                 <li class="list-inline-item">
                                                     <a
-                                                        href="https://"
+                                                        href="https://www.tiktok.com/@ponderosamx"
                                                         alt="TikTok"
                                                         target="_blank"
                                                     >
