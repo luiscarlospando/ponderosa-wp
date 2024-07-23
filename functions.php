@@ -29,7 +29,7 @@ if (function_exists("add_theme_support")) {
     add_image_size("small", 120, "", true); // Small Thumbnail.
     add_image_size("thumb-producto", 400, 400, true); // Thumb producto
     add_image_size("thumb-receta", 231, 231, true); // Thumb receta
-    add_image_size("thumb-vertical", 411, 454, true); // Thumb vertical
+    add_image_size("thumb-vertical", 411, 454, false); // Thumb vertical
 
     // Add Support for Custom Backgrounds - Uncomment below if you're going to use.
     /*add_theme_support('custom-background', array(
