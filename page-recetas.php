@@ -22,7 +22,7 @@ get_header(); ?>
         </div>
     </section -->
 
-    <section  class="recetas-generico section-red py-60">
+    <section  class="recetas-generico section-red py-60" style="padding-top: 100px;">
         <div class="overlay"></div>
         <div class="container-fluid">
             <div class="row mb-5">
