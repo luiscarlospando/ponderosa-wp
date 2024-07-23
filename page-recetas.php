@@ -55,7 +55,7 @@ get_header(); ?>
                         </div>
                     </section>
                 </div>
-                <div class="col-lg-4">
+                <div class="col-lg-4 my-auto">
                     <section  class="recetas-generico section-white py-60">
                         <div class="overlay"></div>
                         <div class="container-fluid">
@@ -85,7 +85,7 @@ get_header(); ?>
                         </div>
                     </section>
                 </div>
-                <div class="col-lg-4">
+                <div class="col-lg-4 my-auto">
                     <section  class="recetas-generico section-red py-60">
                         <div class="overlay"></div>
                         <div class="container-fluid">
