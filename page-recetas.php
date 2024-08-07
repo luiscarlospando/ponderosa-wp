@@ -66,7 +66,7 @@ get_header(); ?>
                     </div>
                     <div class="row">
                         <div class="col text-center">
-                            <a href="<?php echo site_url(); ?>/categoria-recetas/recetas-de-temporada/" class="btn btn-primary">Ver más <i class="fa-solid fa-arrow-right"></i></a>
+                            <a href="<?php echo site_url(); ?>/categoria-recetas/recetas-pa-la-carnita-asada/" class="btn btn-primary">Ver más <i class="fa-solid fa-arrow-right"></i></a>
                         </div>
                     </div>
                 </div>
