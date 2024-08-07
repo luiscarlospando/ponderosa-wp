@@ -5,7 +5,7 @@
 
 get_header(); ?>
 
-    <!-- section id="jumbotron" style="background: url('<?php echo esc_url(
+    <section id="jumbotron" style="background: url('<?php echo esc_url(
         get_the_post_thumbnail_url(get_the_ID(), "full")
     ); ?>') no-repeat; background-size: cover; background-position: center;">
         <div class="overlay"></div>
@@ -20,7 +20,7 @@ get_header(); ?>
                 </div>
             </div>
         </div>
-    </section -->
+    </section>
 
     <section  class="recetas-generico section-red py-60" style="padding-top: 100px;">
         <div class="overlay"></div>
