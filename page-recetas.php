@@ -79,7 +79,7 @@ get_header(); ?>
                     <div class="row">
                         <?php
                         $loopRecetasDeTemporadaOffset3 = locate_template(
-                            "includes/loop-recetas-de-temporada-3.php"
+                            "includes/loop-recetas-de-temporada-offset-3.php"
                         );
                         if ($loopRecetasDeTemporadaOffset3) {
                             load_template($loopRecetasDeTemporadaOffset3, true);
