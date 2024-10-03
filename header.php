@@ -79,14 +79,14 @@
                             ); ?>"
                                 >Nuestra Historia</a
                             >
-                        </li -->
+                        </li>
                         <li>
                             <a id="btn-nav-3" href="<?php echo esc_url(
                                 get_permalink(35)
                             ); ?>"
                                 >Recetas</a
                             >
-                        </li>
+                        </li -->
                         <li>
                             <a <?php if (
                                 is_home()
@@ -155,19 +155,19 @@
                                         ): ?>class="anchor"<?php endif; ?>
                                     >Productos</a>
                                 </li>
-                                <li class="list-inline-item">
+                                <!-- li class="list-inline-item">
                                     <a href="#">Nuestra Historia</a>
                                 </li>
-                                <!-- li class="list-inline-item">
+                                <li class="list-inline-item">
                                     <a href="<?php echo esc_url(
                                         get_permalink(2)
                                     ); ?>">Nuestra Historia</a>
                                 </li -->
-                                <li list-inline-item">
+                                <!-- li list-inline-item">
                                     <a href="<?php echo esc_url(
                                         get_permalink(35)
                                     ); ?>">Recetas</a>
-                                </li>
+                                </li -->
                             </ul>
                         </nav>
                     </div>

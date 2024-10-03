@@ -24,7 +24,7 @@
                                                 ): ?>class="anchor"<?php endif; ?>
                                             >Productos</a>
                                         </li>
-                                        <li>
+                                        <!-- li>
                                             <a href="<?php echo esc_url(
                                                 get_permalink(2)
                                             ); ?>">Nuestra Historia</a>
@@ -33,7 +33,7 @@
                                             <a href="<?php echo esc_url(
                                                 get_permalink(35)
                                             ); ?>">Recetas</a>
-                                        </li>
+                                        </li -->
                                         <li>
                                             <a
                                                 href="<?php echo is_home()
@@ -81,7 +81,7 @@
                                     </ul>
                                 </nav>
                             </div>
-                            <div class="col-6 mb-4 mb-lg-0 col-lg-3 text-lg-center border-lg-end">
+                            <!--div class="col-6 mb-4 mb-lg-0 col-lg-3 text-lg-center border-lg-end">
                                 <h1>Recetas</h1>
                                 <nav>
                                     <ul class="list-unstyled">
@@ -113,7 +113,7 @@
                                         ?>
                                     </ul>
                                 </nav>
-                            </div>
+                            </div -->
                             <div class="col-6 mb-4 mb-lg-0 col-lg-3 text-lg-center border-lg-end">
                                 <h1>Consejos</h1>
                                 <nav>
