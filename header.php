@@ -69,12 +69,17 @@
                             >
                         </li>
                         <li>
+                            <a id="btn-nav-2" href="#"
+                                >Nuestra Historia</a
+                            >
+                        </li>
+                        <!-- li>
                             <a id="btn-nav-2" href="<?php echo esc_url(
                                 get_permalink(2)
                             ); ?>"
                                 >Nuestra Historia</a
                             >
-                        </li>
+                        </li -->
                         <li>
                             <a id="btn-nav-3" href="<?php echo esc_url(
                                 get_permalink(35)

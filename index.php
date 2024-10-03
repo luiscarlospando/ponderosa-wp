@@ -60,7 +60,7 @@
 
     <!-- section id="after-recetario"></section -->
 
-    <section id="nuestra-historia" class="py-60">
+    <!-- section id="nuestra-historia" class="py-60">
         <div class="overlay"></div>
         <div class="container">
             <div class="row">
@@ -78,7 +78,7 @@
                 </div>
             </div>
         </div>
-    </section>
+    </section -->
 
     <!-- section class="before-consejos"></section -->
 
