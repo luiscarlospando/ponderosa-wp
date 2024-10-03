@@ -156,10 +156,13 @@
                                     >Productos</a>
                                 </li>
                                 <li class="list-inline-item">
+                                    <a href="#">Nuestra Historia</a>
+                                </li>
+                                <!-- li class="list-inline-item">
                                     <a href="<?php echo esc_url(
                                         get_permalink(2)
                                     ); ?>">Nuestra Historia</a>
-                                </li>
+                                </li -->
                                 <li list-inline-item">
                                     <a href="<?php echo esc_url(
                                         get_permalink(35)
