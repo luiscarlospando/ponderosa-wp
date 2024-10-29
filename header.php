@@ -142,7 +142,19 @@
         <header id="navbar">
             <div class="container">
                 <div class="row">
-                    <div class="d-none d-lg-block col-lg-5 my-auto text-center">
+                    <div class="col-6 col-lg-2 text-lg-center">
+                        <a href="<?php echo esc_url(home_url()); ?>">
+                            <img
+                                src="<?php echo esc_url(
+                                    get_template_directory_uri()
+                                ); ?>/assets/images/logo@2x.png"
+                                alt=""
+                                class="logo img-fluid"
+                                id="logo-navbar"
+                            />
+                        </a>
+                    </div>
+                    <div class="d-none d-lg-block col-lg-9 my-auto">
                         <nav>
                             <ul class="list-inline">
                                 <li list-inline-item">
@@ -163,30 +175,12 @@
                                         get_permalink(2)
                                     ); ?>">Nuestra Historia</a>
                                 </li -->
-                                <!-- li list-inline-item">
+                                <li list-inline-item">
                                     <a href="<?php echo esc_url(
                                         get_permalink(35)
                                     ); ?>">Recetas</a>
-                                </li -->
-                            </ul>
-                        </nav>
-                    </div>
-                    <div class="col-6 col-lg-2 text-lg-center">
-                        <a href="<?php echo esc_url(home_url()); ?>">
-                            <img
-                                src="<?php echo esc_url(
-                                    get_template_directory_uri()
-                                ); ?>/assets/images/logo@2x.png"
-                                alt=""
-                                class="logo img-fluid"
-                                id="logo-navbar"
-                            />
-                        </a>
-                    </div>
-                    <div class="col-lg-5 d-none d-lg-block my-auto text-center">
-                        <nav>
-                            <ul class="list-inline">
-                                <li list-inline-item">
+                                </li>
+                                <!-- li list-inline-item">
                                     <a
                                         href="<?php echo is_home()
                                             ? "#consejos"
@@ -195,10 +189,16 @@
                                             is_home()
                                         ): ?>class="anchor"<?php endif; ?>
                                     >Consejos Prácticos</a>
-                                </li>
+                                </li -->
                                 <li class="list-inline-item">
                                     <a class="anchor" href="#contacto">Contacto</a>
                                 </li>
+                            </ul>
+                        </nav>
+                    </div>
+                    <div class="d-none d-lg-block col-lg-3 my-auto text-end">
+                        <nav>
+                            <ul class="list-inline">
                                 <li class="list-inline-item">
                                     <ul class="list-inline">
                                         <li class="list-inline-item">
