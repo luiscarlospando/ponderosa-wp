@@ -154,7 +154,7 @@
                             />
                         </a>
                     </div>
-                    <div class="d-none d-lg-block col-lg-9 my-auto">
+                    <div class="d-none d-lg-block col-lg-7 my-auto">
                         <nav>
                             <ul class="list-inline">
                                 <li list-inline-item">
