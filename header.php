@@ -157,7 +157,7 @@
                     <div class="d-none d-lg-block col-lg-7 my-auto">
                         <nav>
                             <ul class="list-inline">
-                                <li list-inline-item">
+                                <li class="list-inline-item">
                                     <a
                                         href="<?php echo is_home()
                                             ? "#productos"
@@ -175,12 +175,12 @@
                                         get_permalink(2)
                                     ); ?>">Nuestra Historia</a>
                                 </li -->
-                                <li list-inline-item">
+                                <li class="list-inline-item">
                                     <a href="<?php echo esc_url(
                                         get_permalink(35)
                                     ); ?>">Recetas</a>
                                 </li>
-                                <!-- li list-inline-item">
+                                <!-- li class="list-inline-item">
                                     <a
                                         href="<?php echo is_home()
                                             ? "#consejos"
