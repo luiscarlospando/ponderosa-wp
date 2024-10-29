@@ -142,7 +142,7 @@
         <header id="navbar">
             <div class="container">
                 <div class="row">
-                    <div class="col-6 col-lg-2 text-lg-center">
+                    <div class="col-6 col-lg-2">
                         <a href="<?php echo esc_url(home_url()); ?>">
                             <img
                                 src="<?php echo esc_url(
