@@ -1,8 +1,8 @@
-			<section id="bg-aleatorio" class="">
-            <img src="<?php echo esc_url(
+		<!-- section id="bg-aleatorio" class="">
+            <img src="<!-- ?php echo esc_url(
                 get_template_directory_uri()
             ); ?>/assets/images/logo-bg-aleatorio@2x.png" alt="" class="logo img-fluid">
-        </section>
+        </section -->
 
         <footer id="contacto">
             <div class="container">

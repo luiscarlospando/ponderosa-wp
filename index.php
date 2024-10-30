@@ -82,7 +82,7 @@
 
     <!-- section class="before-consejos"></section -->
 
-    <section id="consejos" class="section-white">
+    <!-- section id="consejos" class="section-white">
         <div class="container">
             <div class="row mb-5">
                 <div class="col-lg-10 offset-lg-1 text-center">
@@ -91,7 +91,7 @@
             </div>
             <div class="row">
                 <div class="col">
-                    <?php
+                    <!-- ?php
                     $swiperConsejos = locate_template(
                         "includes/swiper-consejos.php"
                     );
@@ -102,7 +102,7 @@
                 </div>
             </div>
         </div>
-    </section>
+    </section -->
 
     <!-- section class="after-consejos"></section -->
 
