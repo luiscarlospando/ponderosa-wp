@@ -12,9 +12,10 @@
                                 de la <strong>salchicha</strong><br>
                                 para <strong>asar</strong>
                             </h1>
-                            <a href="<?php echo esc_url(
-                                get_permalink(2)
-                            ); ?>" class="btn btn-primary">Conoce más</a>
+                            <a href="<?php echo is_home()
+                                ? "#productos"
+                                : site_url() .
+                                    "#productos"; ?>" class="btn btn-primary">Conoce más</a>
                         </div>
                     </div>
                 </div>
@@ -29,7 +30,10 @@
                                 Creando <strong>amistades</strong><br>
                                 que duran <strong>siempre</strong>
                             </h1>
-                            <a href="#" class="btn btn-primary">Conoce más</a>
+                            <a href="<?php echo is_home()
+                                ? "#productos"
+                                : site_url() .
+                                    "#productos"; ?>" class="btn btn-primary">Conoce más</a>
                         </div>
                     </div>
                 </div>
@@ -64,9 +68,10 @@
                                 Creando <strong>recetas</strong><br>
                                 para la <strong>familia</strong>
                             </h1>
-                            <a href="<?php echo esc_url(
-                                get_permalink(35)
-                            ); ?>" class="btn btn-primary">Conoce más</a>
+                            <a href="<?php echo is_home()
+                                ? "#productos"
+                                : site_url() .
+                                    "#productos"; ?>" class="btn btn-primary">Conoce más</a>
                         </div>
                     </div>
                 </div>
