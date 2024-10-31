@@ -47,7 +47,9 @@ if ($receta_query->have_posts()):
     wp_reset_postdata();
 else:
      ?>
-    <p>No se encontraron recetas.</p>
+     <div class="text-center">
+         <p>No hay recetas en este momento.</p>
+     </div>
 <?php
 endif;
 ?>
