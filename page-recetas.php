@@ -24,9 +24,9 @@ get_header(); ?>
 
     <section  class="recetas-generico section-red py-60" style="padding-top: 100px;">
         <div class="overlay"></div>
-        <div class="container-fluid">
+        <div class="container">
             <div class="row mb-5">
-                <div class="col-12">
+                <div class="col-lg-8 offset-lg-2">
                     <div class="row mb-5">
                         <div class="col-12 text-center">
                             <h1>Recetas de temporada</h1>
