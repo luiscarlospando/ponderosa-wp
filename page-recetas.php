@@ -26,7 +26,7 @@ get_header(); ?>
         <div class="overlay"></div>
         <div class="container-fluid">
             <div class="row mb-5">
-                <div class="col-lg-6">
+                <div class="col-12">
                     <div class="row mb-5">
                         <div class="col-12 text-center">
                             <h1>Recetas de temporada</h1>
@@ -48,14 +48,14 @@ get_header(); ?>
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-6">
+                <!-- div class="col-lg-6">
                     <div class="row mb-5">
                         <div class="col-12 text-center">
                             <h1>Recetas pa' la carnita asada</h1>
                         </div>
                     </div>
                     <div class="row">
-                        <?php
+                        <!-- ?php
                         $loopRecetasPaLaCarnitaAsada = locate_template(
                             "includes/loop-recetas-pa-la-carnita-asada.php"
                         );
@@ -69,7 +69,7 @@ get_header(); ?>
                             <a href="<?php echo site_url(); ?>/categoria-recetas/recetas-pa-la-carnita-asada/" class="btn btn-primary">Ver más <i class="fa-solid fa-arrow-right"></i></a>
                         </div>
                     </div>
-                </div>
+                </div -->
                 <!-- div class="col-lg-4">
                     <div class="row mb-5">
                         <div class="col-12 text-center">
