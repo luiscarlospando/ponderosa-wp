@@ -23,7 +23,7 @@
                     </div>
                     <div class="col-xl-8 my-auto">
                         <div class="row">
-                            <div class="col-xl-8 mb-4 mb-xl-0">
+                            <div class="col-12">
                                 <h1><?php the_title(); ?></h1>
                                 <?php the_content(); ?>
                                 <?php edit_post_link(); ?>
