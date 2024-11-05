@@ -27,30 +27,7 @@
                                 <h1><?php the_title(); ?></h1>
                                 <?php the_content(); ?>
                                 <?php edit_post_link(); ?>
-                                <?php if (have_rows("presentacion")): ?>
-                                    <h2>Presentación</h2>
-                                    <?php while (have_rows("presentacion")):
-                                        the_row(); ?>
-                                    <?php
-                                    endwhile; ?>
-                                <?php endif; ?>
-                                <ul class="list-inline">
-                                    <?php if (have_rows("presentacion")):
-                                        while (have_rows("presentacion")):
-                                            the_row(); ?>
-                                        <?php if (get_sub_field("piezas")): ?>
-                                            <li class="list-inline-item">- <?php the_sub_field(
-                                                "piezas"
-                                            ); ?></li>
-                                        <?php endif; ?>
-                                    <?php
-                                        endwhile; ?>
-                                    <?php
-                                    else:
-                                         ?>
-                                    <?php
-                                    endif; ?>
-                                </ul>
+
                                 <?php
                                 $receta_popular = get_field("receta_popular");
                                 if ($receta_popular): ?>
@@ -89,116 +66,166 @@
                                     </div>
                                 <?php endif;
                                 ?>
-                            </div>
-                            <div class="col-xl-4">
-                                <ul class="list-unstyled especificaciones">
-                                    <?php if (get_field("porcion")): ?>
-                                        <li>
-                                            <div class="especificacion">
-                                                <div><?php the_field(
-                                                    "porcion"
-                                                ); ?></div>
-                                                <div>Porción</div>
-                                            </div>
-                                        </li>
-                                        <h2><?php the_field(
-                                            "text_field"
-                                        ); ?></h2>
-                                    <?php endif; ?>
-                                    <?php if (
-                                        get_field("contenido_energetico")
-                                    ): ?>
-                                        <li>
-                                            <div class="especificacion">
-                                                <div><?php the_field(
+
+                                <div class="row">
+                                    <div class="col-6">
+                                        <?php if (have_rows("presentacion")): ?>
+                                            <h2>Presentación</h2>
+                                            <?php while (
+                                                have_rows("presentacion")
+                                            ):
+                                                the_row(); ?>
+                                            <?php
+                                            endwhile; ?>
+                                        <?php endif; ?>
+
+                                        <ul class="list-inline">
+                                            <?php if (
+                                                have_rows("presentacion")
+                                            ):
+                                                while (
+                                                    have_rows("presentacion")
+                                                ):
+                                                    the_row(); ?>
+                                                <?php if (
+                                                    get_sub_field("piezas")
+                                                ): ?>
+                                                    <li class="list-inline-item">- <?php the_sub_field(
+                                                        "piezas"
+                                                    ); ?></li>
+                                                <?php endif; ?>
+                                            <?php
+                                                endwhile; ?>
+                                            <?php
+                                            else:
+                                                 ?>
+                                            <?php
+                                            endif; ?>
+                                        </ul>
+                                    </div>
+                                    <div class="col-6">
+                                        <ul class="list-inline especificaciones">
+                                            <?php if (get_field("porcion")): ?>
+                                                <li class="list-inline-item">
+                                                    <div class="especificacion">
+                                                        <div><?php the_field(
+                                                            "porcion"
+                                                        ); ?></div>
+                                                        <div>Porción</div>
+                                                    </div>
+                                                </li>
+                                                <h2><?php the_field(
+                                                    "text_field"
+                                                ); ?></h2>
+                                            <?php endif; ?>
+                                            <?php if (
+                                                get_field(
                                                     "contenido_energetico"
-                                                ); ?></div>
-                                                <div>Contenido energético /kcal</div>
-                                            </div>
-                                        </li>
-                                        <h2><?php the_field(
-                                            "text_field"
-                                        ); ?></h2>
-                                    <?php endif; ?>
-                                    <?php if (get_field("proteinas")): ?>
-                                        <li>
-                                            <div class="especificacion">
-                                                <div><?php the_field(
-                                                    "proteinas"
-                                                ); ?></div>
-                                                <div>Proteínas</div>
-                                            </div>
-                                        </li>
-                                        <h2><?php the_field(
-                                            "text_field"
-                                        ); ?></h2>
-                                    <?php endif; ?>
-                                    <?php if (get_field("grasas_lipidos")): ?>
-                                        <li>
-                                            <div class="especificacion">
-                                                <div><?php the_field(
-                                                    "grasas_lipidos"
-                                                ); ?></div>
-                                                <div>Grasas (lípidos)</div>
-                                            </div>
-                                        </li>
-                                        <h2><?php the_field(
-                                            "text_field"
-                                        ); ?></h2>
-                                    <?php endif; ?>
-                                    <?php if (get_field("grasa_saturada")): ?>
-                                        <li>
-                                            <div class="especificacion">
-                                                <div><?php the_field(
-                                                    "grasa_saturada"
-                                                ); ?></div>
-                                                <div>Grasa saturada</div>
-                                            </div>
-                                        </li>
-                                        <h2><?php the_field(
-                                            "text_field"
-                                        ); ?></h2>
-                                    <?php endif; ?>
-                                    <?php if (get_field("carbohidratos")): ?>
-                                        <li>
-                                            <div class="especificacion">
-                                                <div><?php the_field(
-                                                    "carbohidratos"
-                                                ); ?></div>
-                                                <div>Carbohidratos</div>
-                                            </div>
-                                        </li>
-                                        <h2><?php the_field(
-                                            "text_field"
-                                        ); ?></h2>
-                                    <?php endif; ?>
-                                    <?php if (get_field("azucares")): ?>
-                                        <li>
-                                            <div class="especificacion">
-                                                <div><?php the_field(
-                                                    "azucares"
-                                                ); ?></div>
-                                                <div>Azúcares</div>
-                                            </div>
-                                        </li>
-                                        <h2><?php the_field(
-                                            "text_field"
-                                        ); ?></h2>
-                                    <?php endif; ?>
-                                    <?php if (get_field("sodio")): ?>
-                                        <li>
-                                            <div class="especificacion">
-                                                <div><?php the_field(
-                                                    "sodio"
-                                                ); ?></div>
-                                                <div>Sodio</div>
-                                            </div>
-                                        </li>
-                                        <h2><?php the_field(
-                                            "text_field"
-                                        ); ?></h2>
-                                    <?php endif; ?>
-                                </ul>
+                                                )
+                                            ): ?>
+                                                <li class="list-inline-item">
+                                                    <div class="especificacion">
+                                                        <div><?php the_field(
+                                                            "contenido_energetico"
+                                                        ); ?></div>
+                                                        <div>Contenido energético /kcal</div>
+                                                    </div>
+                                                </li>
+                                                <h2><?php the_field(
+                                                    "text_field"
+                                                ); ?></h2>
+                                            <?php endif; ?>
+                                            <?php if (
+                                                get_field("proteinas")
+                                            ): ?>
+                                                <li class="list-inline-item">
+                                                    <div class="especificacion">
+                                                        <div><?php the_field(
+                                                            "proteinas"
+                                                        ); ?></div>
+                                                        <div>Proteínas</div>
+                                                    </div>
+                                                </li>
+                                                <h2><?php the_field(
+                                                    "text_field"
+                                                ); ?></h2>
+                                            <?php endif; ?>
+                                            <?php if (
+                                                get_field("grasas_lipidos")
+                                            ): ?>
+                                                <li class="list-inline-item">
+                                                    <div class="especificacion">
+                                                        <div><?php the_field(
+                                                            "grasas_lipidos"
+                                                        ); ?></div>
+                                                        <div>Grasas (lípidos)</div>
+                                                    </div>
+                                                </li>
+                                                <h2><?php the_field(
+                                                    "text_field"
+                                                ); ?></h2>
+                                            <?php endif; ?>
+                                            <?php if (
+                                                get_field("grasa_saturada")
+                                            ): ?>
+                                                <li class="list-inline-item">
+                                                    <div class="especificacion">
+                                                        <div><?php the_field(
+                                                            "grasa_saturada"
+                                                        ); ?></div>
+                                                        <div>Grasa saturada</div>
+                                                    </div>
+                                                </li>
+                                                <h2><?php the_field(
+                                                    "text_field"
+                                                ); ?></h2>
+                                            <?php endif; ?>
+                                            <?php if (
+                                                get_field("carbohidratos")
+                                            ): ?>
+                                                <li class="list-inline-item">
+                                                    <div class="especificacion">
+                                                        <div><?php the_field(
+                                                            "carbohidratos"
+                                                        ); ?></div>
+                                                        <div>Carbohidratos</div>
+                                                    </div>
+                                                </li>
+                                                <h2><?php the_field(
+                                                    "text_field"
+                                                ); ?></h2>
+                                            <?php endif; ?>
+                                            <?php if (get_field("azucares")): ?>
+                                                <li class="list-inline-item">
+                                                    <div class="especificacion">
+                                                        <div><?php the_field(
+                                                            "azucares"
+                                                        ); ?></div>
+                                                        <div>Azúcares</div>
+                                                    </div>
+                                                </li>
+                                                <h2><?php the_field(
+                                                    "text_field"
+                                                ); ?></h2>
+                                            <?php endif; ?>
+                                            <?php if (get_field("sodio")): ?>
+                                                <li class="list-inline-item">
+                                                    <div class="especificacion">
+                                                        <div><?php the_field(
+                                                            "sodio"
+                                                        ); ?></div>
+                                                        <div>Sodio</div>
+                                                    </div>
+                                                </li>
+                                                <h2><?php the_field(
+                                                    "text_field"
+                                                ); ?></h2>
+                                            <?php endif; ?>
+                                        </ul>
+                                    </div>
+                                </div>
+
+
                             </div>
                         </div>
                     </div>
