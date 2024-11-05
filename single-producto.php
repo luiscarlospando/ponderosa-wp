@@ -27,13 +27,13 @@
                                 <h1><?php the_title(); ?></h1>
                                 <?php the_content(); ?>
                                 <?php edit_post_link(); ?>
-                                <?php if (have_rows("presentacion")):
-                                    while (have_rows("presentacion")):
-                                        the_row(); ?>
+                                <?php if (have_rows("presentacion")): ?>
                                     <h2>Presentación</h2>
-                                <?php
-                                    endwhile;
-                                endif; ?>
+                                    <?php while (have_rows("presentacion")):
+                                        the_row(); ?>
+                                    <?php
+                                    endwhile; ?>
+                                <?php endif; ?>
                                 <ul class="list-inline">
                                     <?php if (have_rows("presentacion")):
                                         while (have_rows("presentacion")):
