@@ -16,46 +16,46 @@
         </div>
     </section>
 
-    <section id="receta" class="section-bg-sandwich pt-60 pb-0" style="background: url('<?php echo esc_url(
-        get_the_post_thumbnail_url(get_the_ID(), "full")
-    ); ?>') no-repeat; background-size: cover; background-position: center;">
-        <div class="overlay"></div>
+    <section id="receta" class="pt-60">
         <div class="container">
-            <div class="row mb-5 text-center">
-                <div class="col">
-                    <h1><?php the_title(); ?></h1>
-                </div>
-            </div>
             <div class="row">
-                <div class="col">
-                    <div class="contenedor-receta">
-                        <div class="row">
-                            <div class="col-lg-6 p-5 pb-0 pb-lg-5 border-lg-end">
-                                <?php
-                                // Get the values of the custom fields 'ingredientes' and 'instrucciones'
-                                $ingredientes = get_field("ingredientes");
+                <div class="col-lg-5">
+                    <h1><?php the_title(); ?></h1>
 
-                                // Print the custom fields if they have values
-                                if ($ingredientes):
-                                    echo "<h2>Ingredientes:</h2>";
-                                    echo $ingredientes;
-                                endif;
-                                ?>
-                            </div>
-                            <div class="col-lg-6 p-5">
-                                <?php
-                                // Get the values of the custom fields 'ingredientes' and 'instrucciones'
-                                $instrucciones = get_field("instrucciones");
+                    <?php
+                    // Get the values of the custom fields 'tiempo_de_preparacion'
+                    $tiempo_de_preparacion = get_field("tiempo_de_preparacion");
+                    if (!empty($tiempo_de_preparacion)): ?>
+                        <i class="fa-solid fa-clock"></i> <?php echo esc_html(
+                            $tiempo_de_preparacion
+                        ); ?>
+                    <?php else: ?>
+                        <i class="fa-solid fa-clock"></i> Tiempo no especificado
+                    <?php endif;
+                    ?>
 
-                                // Print the custom fields if they have values
-                                if ($instrucciones):
-                                    echo "<h2>Instrucciones:</h2>";
-                                    echo $instrucciones;
-                                endif;
-                                ?>
-                            </div>
-                        </div>
-                    </div>
+                    <?php
+                    // Get the values of the custom fields 'ingredientes'
+                    $ingredientes = get_field("ingredientes");
+
+                    // Print the custom fields if they have values
+                    if ($ingredientes):
+                        echo "<h2>Ingredientes:</h2>";
+                        echo $ingredientes;
+                    endif;
+                    ?>
+                </div>
+                <div class="col-lg-7">
+                    <?php
+                    // Get the values of the custom fields 'instrucciones'
+                    $instrucciones = get_field("instrucciones");
+
+                    // Print the custom fields if they have values
+                    if ($instrucciones):
+                        echo "<h2>Instrucciones:</h2>";
+                        echo $instrucciones;
+                    endif;
+                    ?>
                 </div>
             </div>
         </div>
