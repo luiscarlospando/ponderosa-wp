@@ -26,11 +26,18 @@
                     // Get the values of the custom fields 'tiempo_de_preparacion'
                     $tiempo_de_preparacion = get_field("tiempo_de_preparacion");
                     if (!empty($tiempo_de_preparacion)): ?>
+                        <div class="my-4">
+                            <i class="fa-solid fa-clock"></i> <?php echo esc_html(
+                                $tiempo_de_preparacion
+                            ); ?>
+                        </div>
                         <i class="fa-solid fa-clock"></i> <?php echo esc_html(
                             $tiempo_de_preparacion
                         ); ?>
                     <?php else: ?>
-                        <i class="fa-solid fa-clock"></i> Tiempo no especificado
+                        <div class="my-4">
+                            <i class="fa-solid fa-clock"></i> Tiempo no especificado
+                        </div>
                     <?php endif;
                     ?>
 
