@@ -76,7 +76,7 @@
                                             ); ?>" class="thumb-link">
                                                 <?php echo get_the_post_thumbnail(
                                                     $producto->ID,
-                                                    "thumb-vertical",
+                                                    "medium",
                                                     [
                                                         "class" =>
                                                             "card-img-top img-fluid",
