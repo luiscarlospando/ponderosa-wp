@@ -27,7 +27,7 @@
                     $tiempo_de_preparacion = get_field("tiempo_de_preparacion");
                     if (!empty($tiempo_de_preparacion)): ?>
                         <div class="my-4">
-                            <i class="fa-solid fa-clock"></i> <?php echo esc_html(
+                            <i class="fa-solid fa-clock"></i> Tiempo de preparación: <?php echo esc_html(
                                 $tiempo_de_preparacion
                             ); ?>
                         </div>
