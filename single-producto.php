@@ -68,7 +68,7 @@
                                 ?>
 
                                 <div class="row">
-                                    <div class="col-md-3">
+                                    <div class="col-md-4">
                                         <?php if (have_rows("presentacion")): ?>
                                             <h2>Presentación</h2>
                                             <?php while (
@@ -103,7 +103,7 @@
                                             endif; ?>
                                         </ul>
                                     </div>
-                                    <div class="col-md-9">
+                                    <div class="col-md-8">
                                         <ul class="list-inline especificaciones">
                                             <?php if (get_field("porcion")): ?>
                                                 <li class="list-inline-item">
