@@ -52,9 +52,15 @@
                                                 ); ?>
                                             </h1>
                                             <p class="card-text">
-                                                <?php echo esc_html(
+                                                <?php
+                                                $content = apply_filters(
+                                                    "the_content",
                                                     $receta_popular->post_content
-                                                ); ?>
+                                                );
+                                                echo wp_strip_all_tags(
+                                                    $content
+                                                );
+                                                ?>
                                             </p>
                                             <a href="<?php echo esc_html(
                                                 get_permalink(
