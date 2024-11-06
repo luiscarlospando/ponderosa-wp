@@ -126,7 +126,7 @@
                                                         <div><?php the_field(
                                                             "contenido_energetico"
                                                         ); ?></div>
-                                                        <div>Contenido energético /kcal</div>
+                                                        <div>Contenido energético</div>
                                                     </div>
                                                 </li>
 
