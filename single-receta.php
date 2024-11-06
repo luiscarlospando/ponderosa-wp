@@ -70,13 +70,13 @@
                                 $producto = get_sub_field("producto");
                                 if ($producto): ?>
                                     <li class="list-inline-item">
-                                        <div class="card mb-4">
+                                        <div class="card mb-4" style="max-width: 300px;">
                                             <a href="<?php echo esc_html(
                                                 get_permalink($producto->ID)
                                             ); ?>" class="thumb-link">
                                                 <?php echo get_the_post_thumbnail(
                                                     $producto->ID,
-                                                    "medium",
+                                                    "small",
                                                     [
                                                         "class" =>
                                                             "card-img-top img-fluid",
