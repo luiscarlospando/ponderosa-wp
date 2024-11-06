@@ -31,9 +31,6 @@
                                 $tiempo_de_preparacion
                             ); ?>
                         </div>
-                        <i class="fa-solid fa-clock"></i> <?php echo esc_html(
-                            $tiempo_de_preparacion
-                        ); ?>
                     <?php else: ?>
                         <div class="my-4">
                             <i class="fa-solid fa-clock"></i> Tiempo no especificado
