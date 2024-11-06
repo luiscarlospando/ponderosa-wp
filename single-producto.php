@@ -52,8 +52,7 @@
                                                 ); ?>
                                             </h1>
                                             <p class="card-text">
-                                                <?php echo apply_filters(
-                                                    "the_content",
+                                                <?php echo esc_html(
                                                     $receta_popular->post_content
                                                 ); ?>
                                             </p>
@@ -79,7 +78,7 @@
                                             endwhile; ?>
                                         <?php endif; ?>
 
-                                        <ul class="list-inline">
+                                        <ul class="listado-presentacion list-inline">
                                             <?php if (
                                                 have_rows("presentacion")
                                             ):
