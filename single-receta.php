@@ -60,6 +60,60 @@
                         echo $instrucciones;
                     endif;
                     ?>
+
+                    <?php if (have_rows("productos_utilizados")): ?>
+                        <h2>Productos Utilizados</h2>
+                        <ul class="list-inline">
+                            <?php while (have_rows("productos_utilizados")):
+
+                                the_row();
+                                $producto = get_sub_field("producto");
+                                if ($producto): ?>
+                                    <li class="list-inline-item">
+                                        <div class="card mb-4">
+                                            <a href="<?php echo esc_html(
+                                                get_permalink($producto->ID)
+                                            ); ?>" class="thumb-link">
+                                                <?php echo get_the_post_thumbnail(
+                                                    $producto->ID,
+                                                    "thumb-receta",
+                                                    [
+                                                        "class" =>
+                                                            "card-img-left img-fluid",
+                                                    ]
+                                                ); ?>
+                                            </a>
+                                            <div class="card-body">
+                                                <h1 class="card-title">
+                                                    <?php echo esc_html(
+                                                        $producto->post_title
+                                                    ); ?>
+                                                </h1>
+                                                <p class="card-text">
+                                                    <?php
+                                                    $content = apply_filters(
+                                                        "the_content",
+                                                        $producto->post_content
+                                                    );
+                                                    echo wp_strip_all_tags(
+                                                        $content
+                                                    );
+                                                    ?>
+                                                </p>
+                                                <a href="<?php echo esc_html(
+                                                    get_permalink($producto->ID)
+                                                ); ?>" class="btn btn-primary">
+                                                    Ver producto <i class="fa-solid fa-arrow-right"></i>
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </li>
+                                <?php endif;
+                                ?>
+                            <?php
+                            endwhile; ?>
+                        </ul>
+                    <?php endif; ?>
                 </div>
             </div>
         </div>
