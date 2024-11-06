@@ -32,7 +32,7 @@
                                 $receta_popular = get_field("receta_popular");
                                 if ($receta_popular): ?>
                                     <h2>Receta popular</h2>
-                                    <div class="card">
+                                    <div class="card mb-4">
                                         <a href="<?php echo esc_html(
                                             get_permalink($receta_popular->ID)
                                         ); ?>" class="thumb-link">
@@ -114,9 +114,7 @@
                                                         <div>Porción</div>
                                                     </div>
                                                 </li>
-                                                <h2><?php the_field(
-                                                    "text_field"
-                                                ); ?></h2>
+
                                             <?php endif; ?>
                                             <?php if (
                                                 get_field(
@@ -131,9 +129,7 @@
                                                         <div>Contenido energético /kcal</div>
                                                     </div>
                                                 </li>
-                                                <h2><?php the_field(
-                                                    "text_field"
-                                                ); ?></h2>
+
                                             <?php endif; ?>
                                             <?php if (
                                                 get_field("proteinas")
@@ -146,9 +142,7 @@
                                                         <div>Proteínas</div>
                                                     </div>
                                                 </li>
-                                                <h2><?php the_field(
-                                                    "text_field"
-                                                ); ?></h2>
+
                                             <?php endif; ?>
                                             <?php if (
                                                 get_field("grasas_lipidos")
@@ -161,9 +155,7 @@
                                                         <div>Grasas (lípidos)</div>
                                                     </div>
                                                 </li>
-                                                <h2><?php the_field(
-                                                    "text_field"
-                                                ); ?></h2>
+
                                             <?php endif; ?>
                                             <?php if (
                                                 get_field("grasa_saturada")
@@ -176,9 +168,7 @@
                                                         <div>Grasa saturada</div>
                                                     </div>
                                                 </li>
-                                                <h2><?php the_field(
-                                                    "text_field"
-                                                ); ?></h2>
+
                                             <?php endif; ?>
                                             <?php if (
                                                 get_field("carbohidratos")
@@ -191,9 +181,7 @@
                                                         <div>Carbohidratos</div>
                                                     </div>
                                                 </li>
-                                                <h2><?php the_field(
-                                                    "text_field"
-                                                ); ?></h2>
+
                                             <?php endif; ?>
                                             <?php if (get_field("azucares")): ?>
                                                 <li class="list-inline-item">
@@ -204,9 +192,7 @@
                                                         <div>Azúcares</div>
                                                     </div>
                                                 </li>
-                                                <h2><?php the_field(
-                                                    "text_field"
-                                                ); ?></h2>
+
                                             <?php endif; ?>
                                             <?php if (get_field("sodio")): ?>
                                                 <li class="list-inline-item">
@@ -217,9 +203,7 @@
                                                         <div>Sodio</div>
                                                     </div>
                                                 </li>
-                                                <h2><?php the_field(
-                                                    "text_field"
-                                                ); ?></h2>
+
                                             <?php endif; ?>
                                         </ul>
                                     </div>
