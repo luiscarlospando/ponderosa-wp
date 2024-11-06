@@ -89,8 +89,8 @@
                                                         $producto->post_title
                                                     ); ?>
                                                 </h1>
-                                                <p class="card-text">
-                                                    <?php
+                                                <!-- p class="card-text">
+                                                    <php
                                                     $content = apply_filters(
                                                         "the_content",
                                                         $producto->post_content
@@ -99,7 +99,7 @@
                                                         $content
                                                     );
                                                     ?>
-                                                </p>
+                                                </p-->
                                                 <a href="<?php echo esc_html(
                                                     get_permalink($producto->ID)
                                                 ); ?>" class="btn btn-primary">
