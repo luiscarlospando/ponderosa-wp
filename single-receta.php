@@ -76,10 +76,10 @@
                                             ); ?>" class="thumb-link">
                                                 <?php echo get_the_post_thumbnail(
                                                     $producto->ID,
-                                                    "thumb-receta",
+                                                    "thumb-vertical",
                                                     [
                                                         "class" =>
-                                                            "card-img-left img-fluid",
+                                                            "card-img-top img-fluid",
                                                     ]
                                                 ); ?>
                                             </a>
@@ -103,7 +103,7 @@
                                                 <a href="<?php echo esc_html(
                                                     get_permalink($producto->ID)
                                                 ); ?>" class="btn btn-primary">
-                                                    Ver producto <i class="fa-solid fa-arrow-right"></i>
+                                                    Ver producto
                                                 </a>
                                             </div>
                                         </div>
