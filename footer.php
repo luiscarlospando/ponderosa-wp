@@ -153,17 +153,12 @@
                         <p class="text-uppercase fw-bold">Síguenos en nuestras redes</p>
                         <ul class="social list-inline">
                             <li class="list-inline-item">
-                                <a href="https://www.instagram.com/ponderosamx/" target="_blank">
-                                    <i class="fa-brands fa-instagram"></i>
-                                </a>
-                            </li>
-                            <li class="list-inline-item">
-                                <a href="https://www.facebook.com/PONDEPONDEROSA?locale=es_LA" target="_blank">
+                                <a href="https://www.facebook.com/PONDEPONDEROSA" target="_blank">
                                     <i class="fa-brands fa-facebook"></i>
                                 </a>
                             </li>
                             <li class="list-inline-item">
-                                <a href="https://www.tiktok.com/@ponderosamx" target="_blank">
+                                <a href="https://tiktok.com/@pondeponderosa" target="_blank">
                                     <i class="fa-brands fa-tiktok"></i>
                                 </a>
                             </li>
