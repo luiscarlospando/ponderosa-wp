@@ -7,7 +7,7 @@
     }
     ?>
 
-    <section class="section-white">
+    <section class="section-white py-60">
         <div class="container">
             <div class="row mb-5">
                 <div class="col-lg-10 offset-lg-1">
