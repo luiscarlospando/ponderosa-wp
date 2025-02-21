@@ -196,7 +196,14 @@
                     <div class="col-12">
                         <p class="copyright-text">© <?php echo date(
                             "Y"
-                        ); ?> <a href="https://grupobafar.com/" target="_blank"">Grupo Bafar</a>. Todos los derechos reservados.</p >
+                        ); ?> <a href="https://grupobafar.com/" target="_blank"">Grupo Bafar</a>. Todos los derechos reservados.</p>
+                        <p>
+                            <a
+                                href="<?php echo get_permalink(3); ?>"
+                            >
+                                <?php echo get_the_title(3); ?>
+                            </a>
+                        </p>
                     </div>
                 </div>
             </div>
